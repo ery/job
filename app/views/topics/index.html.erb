@@ -1,5 +1,3 @@
-<h1>Listing topics</h1>
-
 <table>
   <thead>
     <tr>
@@ -14,14 +12,14 @@
 
   <tbody>
     <% @topics.each do |topic| %>
-      <tr>
-        <td><%= topic.title %></td>
-        <td><%= topic.url %></td>
-        <td><%= topic.memo %></td>
-        <td><%= link_to 'Show', topic %></td>
-        <td><%= link_to 'Edit', edit_topic_path(topic) %></td>
-        <td><%= link_to 'Destroy', topic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+    <tr>
+      <td><%= topic.title %></td>
+      <td><%= topic.url %></td>
+      <td><%= topic.memo %></td>
+      <td><%= link_to 'Show', topic %></td>
+      <td><%= link_to 'Edit', edit_topic_path(topic) %></td>
+      <td><%= link_to 'Destroy', topic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
     <% end %>
   </tbody>
 </table>
