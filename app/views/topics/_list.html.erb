@@ -2,11 +2,7 @@
   <thead>
     <tr>
       <th>Title</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th style="min-width: 260px;"></th>
     </tr>
   </thead>
 
@@ -14,11 +10,24 @@
     <% topics.each do |topic| %>
     <tr>
       <td><%= link_to topic.title, topic.url %></td>
-      <td><%= link_to 'Ignore', ignore_topic_path(topic), method: :put %></td>
-      <td><%= link_to 'Care', care_topic_path(topic), method: :put %></td>
-      <td><%= link_to 'Show', topic %></td>
-      <td><%= link_to 'Edit', edit_topic_path(topic) %></td>
-      <td><%= link_to 'Destroy', topic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <td>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default"><%= link_to 'Ignore', ignore_topic_path(topic), method: :put %></button>
+          <button type="button" class="btn btn-default"><%= link_to 'Care', care_topic_path(topic), method: :put %></button>
+
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+              More
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><%= link_to 'Show', topic %></li>
+              <li><%= link_to 'Edit', edit_topic_path(topic) %></li>
+              <li><%= link_to 'Destroy', topic, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+            </ul>
+          </div>
+        </div>
+      </td>
     </tr>
     <% end %>
   </tbody>
