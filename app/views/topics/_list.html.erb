@@ -6,6 +6,7 @@
       <th></th>
       <th></th>
       <th></th>
+      <th></th>
     </tr>
   </thead>
 
@@ -14,6 +15,7 @@
     <tr>
       <td><%= link_to topic.title, topic.url %></td>
       <td><%= link_to 'Ignore', ignore_topic_path(topic), method: :put %></td>
+      <td><%= link_to 'Care', care_topic_path(topic), method: :put %></td>
       <td><%= link_to 'Show', topic %></td>
       <td><%= link_to 'Edit', edit_topic_path(topic) %></td>
       <td><%= link_to 'Destroy', topic, method: :delete, data: { confirm: 'Are you sure?' } %></td>

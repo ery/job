@@ -1,14 +1,16 @@
 class TopicsController < ApplicationController
-  before_action :set_topic, only: [:show, :edit, :update, :destroy, :ignore]
+  before_action :set_topic, only: [:show, :edit, :update, :destroy, :ignore, :care]
 
-  # GET /topics
-  # GET /topics.json
   def index
-    @topics = Topic.all
+    @topics = Topic.where(:status => Topic::Status::NONE)
   end
 
   def ignored
     @topics = Topic.where(:status => Topic::Status::IGNORED)
+  end
+
+  def cared
+    @topics = Topic.where(:status => Topic::Status::CARED)
   end
 
   def ignore
@@ -17,22 +19,22 @@ class TopicsController < ApplicationController
     redirect_to :action => :index
   end
 
-  # GET /topics/1
-  # GET /topics/1.json
+  def care
+    @topic.status = Topic::Status::CARED
+    @topic.save!
+    redirect_to :action => :index
+  end
+
   def show
   end
 
-  # GET /topics/new
   def new
     @topic = Topic.new
   end
 
-  # GET /topics/1/edit
   def edit
   end
 
-  # POST /topics
-  # POST /topics.json
   def create
     @topic = Topic.new(topic_params)
 
@@ -47,8 +49,6 @@ class TopicsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /topics/1
-  # PATCH/PUT /topics/1.json
   def update
     respond_to do |format|
       if @topic.update(topic_params)
@@ -61,8 +61,6 @@ class TopicsController < ApplicationController
     end
   end
 
-  # DELETE /topics/1
-  # DELETE /topics/1.json
   def destroy
     @topic.destroy
     respond_to do |format|
