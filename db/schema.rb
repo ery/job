@@ -19,8 +19,7 @@ ActiveRecord::Schema.define(version: 20131205195233) do
     t.text     "memo"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "is_ignored", default: false
-    t.string   "status",     default: "none"
+    t.string   "status",     default: "inbox"
   end
 
 end

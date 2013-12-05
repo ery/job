@@ -2,31 +2,31 @@ class TopicsController < ApplicationController
   before_action :set_topic, only: [:show, :edit, :update, :destroy, :ignore, :care]
 
   def index
-    @topics = Topic.where(:status => Topic::Status::NONE)
+    @topics = Topic.all
+  end
+
+  def inbox
+    @topics = Topic.inbox
   end
 
   def ignored
-    @topics = Topic.where(:status => Topic::Status::IGNORED)
+    @topics = Topic.ignored
   end
 
   def cared
-    @topics = Topic.where(:status => Topic::Status::CARED)
-  end
-
-  def all
-    @topics = Topic.all
+    @topics = Topic.cared
   end
 
   def ignore
     @topic.status = Topic::Status::IGNORED
     @topic.save!
-    redirect_to :action => :index
+    redirect_to :action => :inbox
   end
 
   def care
     @topic.status = Topic::Status::CARED
     @topic.save!
-    redirect_to :action => :index
+    redirect_to :action => :inbox
   end
 
   def show

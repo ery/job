@@ -1,7 +1,7 @@
 <ul class="nav bs-sidenav">
-  <li><%= link_to 'Index', topics_path %></li>
-  <li><%= link_to 'Ignored', ignored_topics_path %></li>
-  <li><%= link_to 'Cared', cared_topics_path %></li>
-  <li><%= link_to 'All', all_topics_path %></li>
+  <li><%= link_to "Inbox #{Topic.inbox.count}", inbox_topics_path %></li>
+  <li><%= link_to "Ignored #{Topic.ignored.count}", ignored_topics_path %></li>
+  <li><%= link_to "Cared #{Topic.cared.count}", cared_topics_path %></li>
+  <li><%= link_to "All #{Topic.count}", topics_path %></li>
   <li><%= link_to 'New Topic', new_topic_path %></li>
 </ul>
