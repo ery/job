@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131205193313) do
+ActiveRecord::Schema.define(version: 20131205195233) do
 
   create_table "topics", force: true do |t|
     t.string   "title"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20131205193313) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "is_ignored", default: false
+    t.string   "status",     default: "none"
   end
 
 end

@@ -8,11 +8,11 @@ class TopicsController < ApplicationController
   end
 
   def ignored
-    @topics = Topic.where(:is_ignored => true)
+    @topics = Topic.where(:status => Topic::Status::IGNORED)
   end
 
   def ignore
-    @topic.is_ignored = true
+    @topic.status = Topic::Status::IGNORED
     @topic.save!
     redirect_to :action => :index
   end
