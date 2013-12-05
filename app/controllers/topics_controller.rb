@@ -1,5 +1,5 @@
 class TopicsController < ApplicationController
-  before_action :set_topic, only: [:show, :edit, :update, :destroy]
+  before_action :set_topic, only: [:show, :edit, :update, :destroy, :ignore]
 
   # GET /topics
   # GET /topics.json
@@ -8,7 +8,13 @@ class TopicsController < ApplicationController
   end
 
   def ignored
-    @topics = Topic.all
+    @topics = Topic.where(:is_ignored => true)
+  end
+
+  def ignore
+    @topic.is_ignored = true
+    @topic.save!
+    redirect_to :action => :index
   end
 
   # GET /topics/1
