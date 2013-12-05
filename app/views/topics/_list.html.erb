@@ -13,9 +13,9 @@
       <td><%= link_to topic.title, topic %></td>
       <td>
         <div class="btn-group">
+          <button type="button" class="btn btn-primary"><%= link_to 'Open', topic.url %></button>
           <button type="button" class="btn btn-default"><%= link_to 'Ignore', ignore_topic_path(topic), method: :put %></button>
           <button type="button" class="btn btn-default"><%= link_to 'Care', care_topic_path(topic), method: :put %></button>
-          <button type="button" class="btn btn-default"><%= link_to 'Open', topic.url %></button>
 
           <div class="btn-group">
             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
