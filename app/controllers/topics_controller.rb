@@ -13,6 +13,10 @@ class TopicsController < ApplicationController
     @topics = Topic.where(:status => Topic::Status::CARED)
   end
 
+  def all
+    @topics = Topic.all
+  end
+
   def ignore
     @topic.status = Topic::Status::IGNORED
     @topic.save!

@@ -4,6 +4,7 @@ Job::Application.routes.draw do
     put :care,    :on => :member
     get :ignored, :on => :collection
     get :cared,   :on => :collection
+    get :all,     :on => :collection
   end
   root 'home#index'
 end
