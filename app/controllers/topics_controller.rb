@@ -7,6 +7,10 @@ class TopicsController < ApplicationController
     @topics = Topic.all
   end
 
+  def ignored
+    @topics = Topic.all
+  end
+
   # GET /topics/1
   # GET /topics/1.json
   def show
