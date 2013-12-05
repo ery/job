@@ -2,16 +2,21 @@
 
 <p id="notice"><%= notice %></p>
 
+<div class="well">
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary"><%= link_to 'Open', @topic.url %></button>
+    <button type="button" class="btn btn-default"><%= link_to 'Inbox', putinbox_topic_path(@topic), method: :put %></button>
+    <button type="button" class="btn btn-default"><%= link_to 'Ignore', ignore_topic_path(@topic), method: :put %></button>
+    <button type="button" class="btn btn-default"><%= link_to 'Care', care_topic_path(@topic), method: :put %></button>
+    <button type="button" class="btn btn-default"><%= link_to 'Edit', edit_topic_path(@topic) %></button>
+    <button type="button" class="btn btn-default"><%= link_to 'Destroy', @topic, method: :delete, data: { confirm: 'Are you sure?' } %></button>
+    <button type="button" class="btn btn-default"><%= link_to 'Back', inbox_topics_path %></button>
+  </div>
+</div>
+
 <dl class="dl-horizontal">
   <dt>Status:</dt>
-  <% case @topic.status %>
-  <% when Topic::Status::INBOX %>
-    <dd><span class="label label-default">Inbox</span></dd>
-  <% when Topic::Status::IGNORED %>
-    <dd><span class="label label-primary">Ignored</span></dd>
-  <% when Topic::Status::CARED %>
-    <dd><span class="label label-danger">Cared</span></dd>
-  <% end %>
+  <dd><%= draw_topic_status(@topic) %></dd>
 </dl>
 
 <dl class="dl-horizontal">
@@ -38,14 +43,3 @@
   <dt>Memo:</dt>
   <dd><%= @topic.memo %></dd>
 </dl>
-
-<div class="well">
-  <div class="btn-group">
-    <button type="button" class="btn btn-primary"><%= link_to 'Open', @topic.url %></button>
-    <button type="button" class="btn btn-default"><%= link_to 'Ignore', ignore_topic_path(@topic), method: :put %></button>
-    <button type="button" class="btn btn-default"><%= link_to 'Care', care_topic_path(@topic), method: :put %></button>
-    <button type="button" class="btn btn-default"><%= link_to 'Edit', edit_topic_path(@topic) %></button>
-    <button type="button" class="btn btn-default"><%= link_to 'Destroy', @topic, method: :delete, data: { confirm: 'Are you sure?' } %></button>
-    <button type="button" class="btn btn-default"><%= link_to 'Back', inbox_topics_path %></button>
-  </div>
-</div>

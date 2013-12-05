@@ -5,6 +5,7 @@
       <th>Title</th>
       <th style="min-width:  80px;">月薪</th>
       <th style="min-width:  80px;">年薪</th>
+      <th style="min-width:  80px;">Status</th>
       <th style="min-width: 280px;"></th>
     </tr>
   </thead>
@@ -15,6 +16,7 @@
       <td><%= link_to topic.title, topic %></td>
       <td><%= link_to topic.monthly_salary.to_s, topic %></td>
       <td><%= link_to topic.annual_salary.to_s, topic %></td>
+      <td><%= link_to draw_topic_status(topic), topic %></td>
       <td>
         <div class="btn-group">
           <button type="button" class="btn btn-default"><%= link_to 'Open', topic.url %></button>
@@ -25,6 +27,7 @@
               <span class="caret"></span>
             </button>
             <ul class="dropdown-menu">
+              <li><%= link_to 'Inbox', putinbox_topic_path(topic), method: :put %></li>
               <li><%= link_to 'Ignore', ignore_topic_path(topic), method: :put %></li>
               <li><%= link_to 'Care', care_topic_path(topic), method: :put %></li>
               <li><%= link_to 'Edit', edit_topic_path(topic) %></li>

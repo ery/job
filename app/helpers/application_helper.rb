@@ -4,6 +4,17 @@ module ApplicationHelper
     render 'layouts/action_header', :header => header
   end
 
+  def draw_topic_status(topic)
+    case topic.status
+    when Topic::Status::INBOX
+      content_tag :span, "Inbox", :class => "label label-primary"
+    when Topic::Status::IGNORED
+      content_tag :span, "Ignored", :class => "label label-default"
+    when Topic::Status::CARED
+      content_tag :span, "Cared", :class => "label label-danger"
+    end
+  end
+
   def title_badge(title, badge)
     "#{title} <span class='badge'>#{badge}</span>".html_safe
   end
