@@ -3,4 +3,8 @@ module ApplicationHelper
     header ||= "#{controller_name}.#{action_name}".titleize
     render 'layouts/action_header', :header => header
   end
+
+  def title_badge(title, badge)
+    "#{title} <span class='badge'>#{badge}</span>".html_safe
+  end
 end

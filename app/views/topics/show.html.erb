@@ -1,6 +1,18 @@
-<%= draw_action_header %>
+<%= draw_action_header @topic.title %>
 
 <p id="notice"><%= notice %></p>
+
+<dl class="dl-horizontal">
+  <dt>Status:</dt>
+  <% case @topic.status %>
+  <% when Topic::Status::INBOX %>
+    <dd><span class="label label-default">Inbox</span></dd>
+  <% when Topic::Status::IGNORED %>
+    <dd><span class="label label-primary">Ignored</span></dd>
+  <% when Topic::Status::CARED %>
+    <dd><span class="label label-danger">Cared</span></dd>
+  <% end %>
+</dl>
 
 <dl class="dl-horizontal">
   <dt>Title:</dt>
@@ -18,9 +30,11 @@
 </dl>
 
 <div class="well">
-  <div class="btn-toolbar">
+  <div class="btn-group">
+    <button type="button" class="btn btn-default"><%= link_to 'Ignore', ignore_topic_path(@topic), method: :put %></button>
+    <button type="button" class="btn btn-default"><%= link_to 'Care', care_topic_path(@topic), method: :put %></button>
     <button type="button" class="btn btn-default"><%= link_to 'Edit', edit_topic_path(@topic) %></button>
-    <button type="button" class="btn btn-default"><%= link_to 'Back', inbox_topics_path %></button>
     <button type="button" class="btn btn-default"><%= link_to 'Destroy', @topic, method: :delete, data: { confirm: 'Are you sure?' } %></button>
+    <button type="button" class="btn btn-default"><%= link_to 'Back', inbox_topics_path %></button>
   </div>
 </div>

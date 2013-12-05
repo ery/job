@@ -20,13 +20,13 @@ class TopicsController < ApplicationController
   def ignore
     @topic.status = Topic::Status::IGNORED
     @topic.save!
-    redirect_to :action => :inbox
+    redirect_to :back
   end
 
   def care
     @topic.status = Topic::Status::CARED
     @topic.save!
-    redirect_to :action => :inbox
+    redirect_to :back
   end
 
   def show
