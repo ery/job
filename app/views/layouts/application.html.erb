@@ -47,7 +47,7 @@
       <div class="col-md-9" role="main">
         <div class="bs-docs-section">
           <div class="page-header">
-            <h1><%= action_name %></h1>
+            <h1><%= "#{controller_name}.#{action_name}".titleize %></h1>
           </div>
           <%= yield %>
         </div>
