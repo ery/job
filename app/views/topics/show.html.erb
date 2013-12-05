@@ -2,20 +2,24 @@
 
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @topic.title %>
-</p>
+<dl class="dl-horizontal">
+  <dt>Title:</dt>
+  <dd><%= @topic.title %></dd>
+</dl>
 
-<p>
-  <strong>Url:</strong>
-  <%= link_to @topic.url, @topic.url %>
-</p>
+<dl class="dl-horizontal">
+  <dt>URL:</dt>
+  <dd><%= link_to @topic.url, @topic.url %></dd>
+</dl>
 
-<p>
-  <strong>Memo:</strong>
-  <%= @topic.memo %>
-</p>
+<dl class="dl-horizontal">
+  <dt>Memo:</dt>
+  <dd><%= @topic.memo %></dd>
+</dl>
 
-<%= link_to 'Edit', edit_topic_path(@topic) %> |
-<%= link_to 'Back', inbox_topics_path %>
+<div class="well">
+  <div class="btn-toolbar">
+    <button type="button" class="btn btn-default"><%= link_to 'Edit', edit_topic_path(@topic) %></button>
+    <button type="button" class="btn btn-default"><%= link_to 'Back', inbox_topics_path %></button>
+  </div>
+</div>
