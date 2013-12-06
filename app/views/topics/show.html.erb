@@ -4,13 +4,12 @@
 
 <div class="well">
   <div class="btn-group">
-    <button type="button" class="btn btn-primary"><%= link_to 'Open', @topic.url %></button>
-    <button type="button" class="btn btn-default"><%= link_to 'Inbox', putinbox_topic_path(@topic), method: :put %></button>
-    <button type="button" class="btn btn-default"><%= link_to 'Ignore', ignore_topic_path(@topic), method: :put %></button>
-    <button type="button" class="btn btn-default"><%= link_to 'Care', care_topic_path(@topic), method: :put %></button>
-    <button type="button" class="btn btn-default"><%= link_to 'Edit', edit_topic_path(@topic) %></button>
-    <button type="button" class="btn btn-default"><%= link_to 'Destroy', @topic, method: :delete, data: { confirm: 'Are you sure?' } %></button>
-    <button type="button" class="btn btn-default"><%= link_to 'Back', inbox_topics_path %></button>
+    <button type="button" class="btn btn-primary"><%= link_to '打开', @topic.url, :target => "_blank" %></button>
+    <button type="button" class="btn btn-default"><%= link_to '收件箱', putinbox_topic_path(@topic), method: :put %></button>
+    <button type="button" class="btn btn-default"><%= link_to '忽略', ignore_topic_path(@topic), method: :put %></button>
+    <button type="button" class="btn btn-default"><%= link_to '关注', care_topic_path(@topic), method: :put %></button>
+    <button type="button" class="btn btn-default"><%= link_to '编辑', edit_topic_path(@topic) %></button>
+    <button type="button" class="btn btn-default"><%= link_to '删除', @topic, method: :delete, data: { confirm: 'Are you sure?' } %></button>
   </div>
 </div>
 
