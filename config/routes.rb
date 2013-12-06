@@ -7,5 +7,5 @@ Job::Application.routes.draw do
     get :ignored,  :on => :collection
     get :cared,    :on => :collection
   end
-  root 'home#index'
+  root 'topics#inbox'
 end
