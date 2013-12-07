@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131205224710) do
+ActiveRecord::Schema.define(version: 20131207193046) do
+
+  create_table "rubychina_topics", force: true do |t|
+    t.string   "title"
+    t.string   "orginal_id"
+    t.string   "url"
+    t.string   "author"
+    t.string   "author_url"
+    t.string   "local_file"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "topics", force: true do |t|
     t.string   "title"

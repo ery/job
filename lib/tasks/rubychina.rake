@@ -7,7 +7,7 @@ namespace :rubychina do
     $topic_list     = []
     $new_topic_list = []
 
-    page_count = 2
+    page_count = 3
     page_count.times.each do |index|
       page_number = index + 1
       page_url    = "http://ruby-china.org/topics/node25?page=#{page_number}"
@@ -25,8 +25,8 @@ namespace :rubychina do
     doc.css('.topic_line').each do |line|
       topic = {}
       topic[:title]      = line.css('.title a').first.content
-      topic[:url]        = line.css('.title a').first[:href]
-      topic[:author]     = rubychina_url(line.css('.info a').first.content)
+      topic[:url]        = rubychina_url(line.css('.title a').first[:href])
+      topic[:author]     = line.css('.info a').first.content
       topic[:author_url] = rubychina_url(line.css('.info a').first[:href])
       topic[:orginal_id] = topic[:url].sub("http://ruby-china.org/topics/", "")
       topic[:local_file] = "#{topic_folder}/#{topic[:orginal_id]}.html"
@@ -39,6 +39,10 @@ namespace :rubychina do
     print "."
 
     $topic_list << topic
+
+    if RubychinaTopic.where(url: topic[:url]).exists?
+      return
+    end
 
     page = open(topic[:url]).read
     IO.write topic[:local_file], page
