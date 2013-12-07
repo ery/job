@@ -2,55 +2,66 @@ require 'open-uri'
 
 namespace :rubychina do
 
-  desc 'Fetch Job'
+  desc 'Fetch job'
   task :fetch_job => :environment do
+    $topic_list     = []
+    $new_topic_list = []
+
     page_count = 40
     page_count.times.each do |index|
       page_number = index + 1
       page_url    = "http://ruby-china.org/topics/node25?page=#{page_number}"
       sleep 1
-      fetch_job_from_page page_url
+      puts "Fetch Page #{page_url}"
+      fetch_topic page_url
+      puts " "
     end
 
-    puts "Fetch #{$job_list.count} jbos."
+    puts "Fetch #{$topic_list.count} job topics, #{$new_topic_list.count} new topics."
+    $new_topic_list.each do |topic|
+      puts_topic topic
+    end
   end
 
-  def fetch_job_from_page(page_url)
+  def fetch_topic(page_url)
     doc = Nokogiri::HTML(open(page_url))
     doc.css('.topic_line').each do |line|
-      job = {}
-      job[:topic_title] = line.css('.title a').first.content
-      job[:topic_url]   = line.css('.title a').first[:href]
-      job[:author]      = line.css('.info a').first.content
-      job[:author_url]  = line.css('.info a').first[:href]
+      topic = {}
+      topic[:title]      = line.css('.title a').first.content
+      topic[:url]        = line.css('.title a').first[:href]
+      topic[:author]     = line.css('.info a').first.content
+      topic[:author_url] = line.css('.info a').first[:href]
 
-      job[:topic_url]   = rubychina_url(job[:topic_url])
-      job[:author_url]  = rubychina_url(job[:author_url])
+      topic[:url]        = rubychina_url(topic[:url])
+      topic[:author_url] = rubychina_url(topic[:author_url])
 
-      save_job job
+      save_topic topic
     end
   end
 
-  def save_job(job)
-    unless job[:topic_title].include?('北京')
+  def save_topic(topic)
+    unless topic[:title].include?('北京')
       return
     end
 
-    $job_list ||= []
-    $job_list << job
+    print "."
 
-    if Topic.where(url: job[:topic_url]).exists?
+    $topic_list << topic
+
+    if Topic.where(url: topic[:url]).exists?
       return
     end
-    Topic.create!(title: job[:title], url: job[:topic_url])
-    puts_job job
+    Topic.create!(title: topic[:title], url: topic[:url])
+
+    $new_topic_list << topic
   end
 
-  def puts_job(job)
-    puts "Topic Title: #{job[:topic_title]}"
-    puts "Topic URL:   #{job[:topic_url]}"
-    puts "Author:      #{job[:author]}"
-    puts "Author URL:  #{job[:author_url]}"
+  def puts_topic(topic)
+    puts "Topic..........................................."
+    puts "Title: #{topic[:title]}"
+    puts "URL:   #{topic[:url]}"
+    puts "Author:      #{topic[:author]}"
+    puts "Author URL:  #{topic[:author_url]}"
     puts
   end
 
