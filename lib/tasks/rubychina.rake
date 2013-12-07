@@ -3,7 +3,7 @@ require 'open-uri'
 namespace :rubychina do
 
   desc 'Fetch Job'
-  task :fetch_job do
+  task :fetch_job => :environment do
     page_count = 40
     page_count.times.each do |index|
       page_number = index + 1
@@ -11,6 +11,8 @@ namespace :rubychina do
       sleep 1
       fetch_job_from_page page_url
     end
+
+    puts "Fetch #{$job_list.count} jbos."
   end
 
   def fetch_job_from_page(page_url)
@@ -25,10 +27,23 @@ namespace :rubychina do
       job[:topic_url]   = rubychina_url(job[:topic_url])
       job[:author_url]  = rubychina_url(job[:author_url])
 
-      if job[:topic_title].include?('北京')
-        puts_job(job)
-      end
+      save_job job
     end
+  end
+
+  def save_job(job)
+    unless job[:topic_title].include?('北京')
+      return
+    end
+
+    $job_list ||= []
+    $job_list << job
+
+    if Topic.where(url: job[:topic_url]).exists?
+      return
+    end
+    Topic.create!(title: job[:title], url: job[:topic_url])
+    puts_job job
   end
 
   def puts_job(job)
