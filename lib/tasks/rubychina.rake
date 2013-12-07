@@ -45,7 +45,7 @@ namespace :rubychina do
     #  return
     #end
 
-    topic[:file] = File.expand_path("../../../db/rubychina/#{1,rand(999999)}.html", __FILE__)
+    topic[:file] = File.expand_path("../../../db/rubychina/#{rand(999999)}.html", __FILE__)
     File.open(topic[:file], 'w') { |file| file.write(doc.to_s) }
     #RubyChinaTopic.create!(title: topic[:title], url: topic[:url], file: topic[:file])
 
