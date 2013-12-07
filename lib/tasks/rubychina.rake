@@ -7,7 +7,7 @@ namespace :rubychina do
     $topic_list     = []
     $new_topic_list = []
 
-    page_count = 3
+    page_count = 40
     page_count.times.each do |index|
       page_number = index + 1
       page_url    = "http://ruby-china.org/topics/node25?page=#{page_number}"
