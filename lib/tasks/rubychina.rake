@@ -46,9 +46,9 @@ namespace :rubychina do
       Dir.mkdir topic_folder
     end
 
-    page = open(topic[:url]).read
     topic_id = topic[:url].sub("http://ruby-china.org/topics/", "")
     topic[:file] = "#{topic_folder}/#{topic_id}.html"
+    page = open(topic[:url]).read
     IO.write topic[:file], page
 
     $new_topic_list << topic
