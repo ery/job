@@ -7,7 +7,7 @@ namespace :rubychina do
     $topic_list     = []
     $new_topic_list = []
 
-    page_count = 40
+    page_count = 2
     page_count.times.each do |index|
       page_number = index + 1
       page_url    = "http://ruby-china.org/topics/node25?page=#{page_number}"
@@ -32,31 +32,31 @@ namespace :rubychina do
       topic[:url]        = rubychina_url(topic[:url])
       topic[:author_url] = rubychina_url(topic[:author_url])
 
-      fetch_topic topic, doc
+      fetch_topic topic
     end
   end
 
-  def fetch_topic(topic, doc)
+  def fetch_topic(topic)
     print "."
 
     $topic_list << topic
 
-    #if RubyChinaTopic.where(url: topic[:url]).exists?
-    #  return
-    #end
+    topic_folder = File.expand_path("../../../db/rubychina", __FILE__)
+    unless File.directory?(topic_folder)
+      Dir.mkdir topic_folder
+    end
 
-    topic[:file] = File.expand_path("../../../db/rubychina/#{rand(999999)}.html", __FILE__)
-    File.open(topic[:file], 'w') { |file| file.write(doc.to_s) }
-    #RubyChinaTopic.create!(title: topic[:title], url: topic[:url], file: topic[:file])
+    page = open(topic[:url]).read
+    topic_id = topic[:url].sub("http://ruby-china.org/topics/", "")
+    topic[:file] = "#{topic_folder}/#{topic_id}.html"
+    IO.write topic[:file], page
 
     $new_topic_list << topic
   end
 
-  def puts_new_topics(topic)
+  def puts_new_topics
     puts "fetch #{$topic_list.count} job topics, #{$new_topic_list.count} new topics."
     $new_topic_list.each do |topic|
-      puts_topic topic
-
       puts "Topic..........................................."
       puts "Title:      #{topic[:title]}"
       puts "URL:        #{topic[:url]}"
