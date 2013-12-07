@@ -61,7 +61,6 @@ namespace :rubychina do
   end
 
   def puts_new_topics
-    puts "fetch #{$topic_list.count} job topics, #{$new_topic_list.count} new topics."
     $new_topic_list.each do |topic|
       puts "Topic..........................................."
       puts "Title:      #{topic[:title]}"
@@ -71,6 +70,7 @@ namespace :rubychina do
       puts "File:       #{topic[:file]}"
       puts
     end
+    puts "fetch #{$topic_list.count} job topics, #{$new_topic_list.count} new topics."
   end
 
   def rubychina_url(url)
