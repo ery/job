@@ -58,10 +58,10 @@ namespace :rubychina do
 
   def puts_topic(topic)
     puts "Topic..........................................."
-    puts "Title: #{topic[:title]}"
-    puts "URL:   #{topic[:url]}"
-    puts "Author:      #{topic[:author]}"
-    puts "Author URL:  #{topic[:author_url]}"
+    puts "Title:      #{topic[:title]}"
+    puts "URL:        #{topic[:url]}"
+    puts "Author:     #{topic[:author]}"
+    puts "Author URL: #{topic[:author_url]}"
     puts
   end
 
