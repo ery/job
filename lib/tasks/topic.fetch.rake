@@ -4,8 +4,9 @@ namespace :topic do
 
   desc "Fetch"
   task :fetch => :environment do
-    $topic_list     = []
-    $new_topic_list = []
+    $topic_list = []
+    $download_new_topic_list = []
+    $create_new_topic_list   = []
 
     page_count = 40
     page_count.times.each do |index|
@@ -17,7 +18,7 @@ namespace :topic do
       puts " "
     end
 
-    puts_new_topics
+    puts_report
   end
 
   def fetch_topics_from_page(page_url)
@@ -31,25 +32,34 @@ namespace :topic do
       topic[:orginal_id] = topic[:url].sub("http://ruby-china.org/topics/", "")
       topic[:local_file] = "#{topic_folder}/#{topic[:orginal_id]}.html"
 
-      fetch_topic topic
+      print "."
+      $topic_list << topic
+
+      download_topic topic
+
+      create_topic topic
     end
   end
 
-  def fetch_topic(topic)
-    print "."
-
-    $topic_list << topic
-
-    if RubychinaSubject.where(url: topic[:url]).exists?
+  def download_topic(topic)
+    if File.exists?(topic[:local_file])
       return
     end
 
     page = open(topic[:url]).read
     IO.write topic[:local_file], page
 
-    RubychinaSubject.create! topic
+    $download_new_topic_list << topic
+  end
 
-    $new_topic_list << topic
+  def create_topic(topic)
+    if Subject.where(url: topic[:url]).exists?
+      return
+    end
+
+    Subject.create! topic
+
+    $create_new_topic_list << topic
   end
 
   def topic_folder
@@ -60,8 +70,8 @@ namespace :topic do
     return path
   end
 
-  def puts_new_topics
-    $new_topic_list.each do |topic|
+  def puts_report
+    $create_new_topic_list.each do |topic|
       puts "Subject..........................................."
       puts "Title:      #{topic[:title]}"
       puts "URL:        #{topic[:url]}"
@@ -70,7 +80,10 @@ namespace :topic do
       puts "File:       #{topic[:file]}"
       puts
     end
-    puts "fetch #{$topic_list.count} job topics, #{$new_topic_list.count} new topics."
+
+    puts "Fetch #{$topic_list.count} topics."
+    puts "Download #{$download_new_topic_list.count} topics."
+    puts "Create #{$create_new_topic_list.count} topics."
   end
 
   def rubychina_url(url)
