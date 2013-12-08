@@ -1,10 +1,6 @@
 class SubjectsController < ApplicationController
   before_action :set_subject, only: [:show, :edit, :update, :destroy, :ignore, :care, :putinbox]
 
-  def index
-    @subjects = Subject.all
-  end
-
   def inbox
     @subjects = Subject.inbox
   end
@@ -17,22 +13,26 @@ class SubjectsController < ApplicationController
     @subjects = Subject.cared
   end
 
+  def index
+    @subjects = Subject.all
+  end
+
   def putinbox
     @subject.status = Subject::Status::INBOX
     @subject.save!
-    redirect_to :back
+    redirect_to :action => :inbox
   end
 
   def ignore
     @subject.status = Subject::Status::IGNORED
     @subject.save!
-    redirect_to :back
+    redirect_to :action => :inbox
   end
 
   def care
     @subject.status = Subject::Status::CARED
     @subject.save!
-    redirect_to :back
+    redirect_to :action => :inbox
   end
 
   def show
