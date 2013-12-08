@@ -1,6 +1,7 @@
 
 desc "Step 2 create subject"
 task :step_2_create_subject => :environment do
+  puts "Step 2 create subject"
   Topic.all.each do |topic|
     print "."
     create_subject topic
