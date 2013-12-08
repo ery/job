@@ -5,6 +5,7 @@ namespace :topic do
   desc "Analyze"
   task :analyze => :environment do
     Topic.all.each do |topic|
+      print "."
       analyze_topic topic
     end
   end
