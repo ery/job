@@ -4,9 +4,9 @@ namespace :topic do
 
   desc "Fetch"
   task :fetch => :environment do
-    $found_topics = []
-    $download_new_topics = []
-    $created_new_topics   = []
+    $found_topics    = []
+    $download_topics = []
+    $created_topics  = []
 
     page_count = 40
     page_count.times.each do |index|
@@ -50,7 +50,7 @@ namespace :topic do
     page = open(topic[:url]).read
     IO.write topic[:file], page
 
-    $download_new_topics << topic
+    $download_topics << topic
   end
 
   def create_topic(topic)
@@ -60,7 +60,7 @@ namespace :topic do
 
     Topic.create! topic
 
-    $created_new_topics << topic
+    $created_topics << topic
   end
 
   def topic_folder
@@ -72,7 +72,7 @@ namespace :topic do
   end
 
   def puts_report
-    $created_new_topics.each do |topic|
+    $created_topics.each do |topic|
       puts "Create a topic..........................................."
       puts "Title: #{topic[:title]}"
       puts "URL:   #{topic[:url]}"
@@ -82,8 +82,8 @@ namespace :topic do
 
     puts "Fetch topics:"
     puts "Found #{$found_topics.count}."
-    puts "Download #{$download_new_topics.count}."
-    puts "Created #{$created_new_topics.count}."
+    puts "Download #{$download_topics.count}."
+    puts "Created #{$created_topics.count}."
   end
 
   def rubychina_url(url)
