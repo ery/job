@@ -20,7 +20,7 @@ def analyze_salary(topic)
   description = doc.css('.topic .body').first.content
   description.gsub!("\n", ' ')
 
-  %w(工资 薪水 年薪 月薪 薪资 待遇).each do |keyword|
+  %w(工资 薪水 年薪 月薪 薪资 待遇 薪酬).each do |keyword|
     salary = /#{keyword}.{1,50}/.match(description)
     if salary
       return salary.to_s

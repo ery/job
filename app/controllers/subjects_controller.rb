@@ -20,19 +20,19 @@ class SubjectsController < ApplicationController
   def putinbox
     @subject.status = Subject::Status::INBOX
     @subject.save!
-    redirect_to :action => :inbox
+    redirect_to :back
   end
 
   def ignore
     @subject.status = Subject::Status::IGNORED
     @subject.save!
-    redirect_to :action => :inbox
+    redirect_to :back
   end
 
   def care
     @subject.status = Subject::Status::CARED
     @subject.save!
-    redirect_to :action => :inbox
+    redirect_to :back
   end
 
   def show
