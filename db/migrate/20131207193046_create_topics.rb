@@ -1,6 +1,6 @@
 class CreateTopics < ActiveRecord::Migration
   def change
-    create_table :rubychina_subjects do |t|
+    create_table :topics do |t|
       t.string :title
       t.string :orginal_id
       t.string :url
