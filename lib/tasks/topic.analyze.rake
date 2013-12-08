@@ -8,6 +8,7 @@ namespace :topic do
       print "."
       analyze_topic topic
     end
+    puts "."
   end
 
   def analyze_topic(topic)
