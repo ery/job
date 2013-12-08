@@ -4,9 +4,9 @@ namespace :topic do
 
   desc "Fetch"
   task :fetch => :environment do
-    $topic_list = []
-    $download_new_topic_list = []
-    $create_new_topic_list   = []
+    $found_topics = []
+    $download_new_topics = []
+    $created_new_topics   = []
 
     page_count = 40
     page_count.times.each do |index|
@@ -24,16 +24,17 @@ namespace :topic do
   def fetch_topics_from_page(page_url)
     doc = Nokogiri::HTML(open(page_url))
     doc.css('.topic_line').each do |line|
+      title        = line.css('.title a').first.content
+      url          = line.css('.title a').first[:href]
+      rubychina_id = line.css('.title a').first[:href].sub("topics/", "")
+
       topic = {}
-      topic[:title]      = line.css('.title a').first.content
-      topic[:url]        = rubychina_url(line.css('.title a').first[:href])
-      topic[:author]     = line.css('.info a').first.content
-      topic[:author_url] = rubychina_url(line.css('.info a').first[:href])
-      topic[:orginal_id] = topic[:url].sub("http://ruby-china.org/topics/", "")
-      topic[:local_file] = "#{topic_folder}/#{topic[:orginal_id]}.html"
+      topic[:title] = title
+      topic[:url]   = "http://ruby-china.org#{url}"
+      topic[:file]  = "#{topic_folder}/#{rubychina_id}.html"
 
       print "."
-      $topic_list << topic
+      $found_topics << topic
 
       download_topic topic
 
@@ -42,14 +43,14 @@ namespace :topic do
   end
 
   def download_topic(topic)
-    if File.exists?(topic[:local_file])
+    if File.exists?(topic[:file])
       return
     end
 
     page = open(topic[:url]).read
-    IO.write topic[:local_file], page
+    IO.write topic[:file], page
 
-    $download_new_topic_list << topic
+    $download_new_topics << topic
   end
 
   def create_topic(topic)
@@ -59,7 +60,7 @@ namespace :topic do
 
     Topic.create! topic
 
-    $create_new_topic_list << topic
+    $created_new_topics << topic
   end
 
   def topic_folder
@@ -71,23 +72,21 @@ namespace :topic do
   end
 
   def puts_report
-    $create_new_topic_list.each do |topic|
-      puts "Topic..........................................."
-      puts "Title:      #{topic[:title]}"
-      puts "URL:        #{topic[:url]}"
-      puts "Author:     #{topic[:author]}"
-      puts "Author URL: #{topic[:author_url]}"
-      puts "File:       #{topic[:local_file]}"
+    $created_new_topics.each do |topic|
+      puts "Create a topic..........................................."
+      puts "Title: #{topic[:title]}"
+      puts "URL:   #{topic[:url]}"
+      puts "File:  #{topic[:file]}"
       puts
     end
 
-    puts "Fetch #{$topic_list.count} topics."
-    puts "Download #{$download_new_topic_list.count} topics."
-    puts "Create #{$create_new_topic_list.count} topics."
+    puts "Fetch topics:"
+    puts "Found #{$found_topics.count}."
+    puts "Download #{$download_new_topics.count}."
+    puts "Created #{$created_new_topics.count}."
   end
 
   def rubychina_url(url)
-    "http://ruby-china.org#{url}"
   end
 
 end
