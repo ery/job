@@ -4,6 +4,7 @@ class CreateTopics < ActiveRecord::Migration
       t.string :title
       t.string :url
       t.string :file
+      t.string :analyzed_salary
       t.timestamps
     end
   end

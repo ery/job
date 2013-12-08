@@ -4,9 +4,8 @@ class CreateSubjects < ActiveRecord::Migration
       t.string :title
       t.string :url
       t.string :status, :default => Subject::Status::INBOX
-      t.string :analyzed_salary
       t.string :manual_salary
-      t.string :memo
+      t.string :manual_memo
       t.timestamps
     end
   end

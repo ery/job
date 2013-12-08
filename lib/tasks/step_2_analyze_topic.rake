@@ -9,8 +9,8 @@ task :step_2_analyze_topic => :environment do
 end
 
 def analyze_topic(topic)
-  topic = topic.find_by_url!(topic.url)
-  topic.analyzed_salary = analyze_salary(topic)
+  topic = Topic.find_by_url!(topic.url)
+  topic.salary = analyze_salary(topic)
   topic.save!
 end
 
