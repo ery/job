@@ -26,11 +26,8 @@ ActiveRecord::Schema.define(version: 20131209170351) do
 
   create_table "topics", force: true do |t|
     t.string   "title"
-    t.string   "orginal_id"
     t.string   "url"
-    t.string   "author"
-    t.string   "author_url"
-    t.string   "local_file"
+    t.string   "file"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
