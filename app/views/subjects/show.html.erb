@@ -4,37 +4,36 @@
 
 <div class="well">
   <div class="btn-group">
-    <button type="button" class="btn btn-default"><%= link_to '打开', @subject.url, :target => "_blank" %></button>
+    <button type="button" class="btn btn-default"><%= link_to '原招聘贴', @subject.url, :target => "_blank" %></button>
+    <button type="button" class="btn btn-default"><%= link_to '编辑', edit_subject_path(@subject) %></button>
     <button type="button" class="btn btn-default"><%= link_to '收件箱', putinbox_subject_path(@subject), method: :put %></button>
     <button type="button" class="btn btn-default"><%= link_to '忽略', ignore_subject_path(@subject), method: :put %></button>
     <button type="button" class="btn btn-default"><%= link_to '关注', care_subject_path(@subject), method: :put %></button>
-    <button type="button" class="btn btn-default"><%= link_to '编辑', edit_subject_path(@subject) %></button>
-    <button type="button" class="btn btn-default"><%= link_to '删除', @subject, method: :delete, data: { confirm: 'Are you sure?' } %></button>
   </div>
 </div>
 
 <dl class="dl-horizontal">
-  <dt>Status:</dt>
+  <dt>状态:</dt>
   <dd><%= draw_subject_status(@subject) %></dd>
 </dl>
 
 <dl class="dl-horizontal">
-  <dt>Title:</dt>
+  <dt>标题:</dt>
   <dd><%= @subject.title %></dd>
 </dl>
 
 <dl class="dl-horizontal">
-  <dt>URL:</dt>
+  <dt>网址:</dt>
   <dd><%= link_to @subject.url, @subject.url %></dd>
 </dl>
 
 <dl class="dl-horizontal">
-  <dt>自动 薪水:</dt>
+  <dt>自动薪资:</dt>
   <dd><%= @subject.analyzed_salary %></dd>
 </dl>
 
 <dl class="dl-horizontal">
-  <dt>手动 薪水:</dt>
+  <dt>手动薪资:</dt>
   <dd><%= @subject.manual_salary %></dd>
 </dl>
 
