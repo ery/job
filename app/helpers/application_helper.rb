@@ -4,8 +4,8 @@ module ApplicationHelper
     render 'layouts/action_header', :header => header
   end
 
-  def draw_topic_status(topic)
-    case topic.status
+  def draw_subject_status(subject)
+    case subject.status
     when Subject::Status::INBOX
       content_tag :span, "Inbox", :class => "label label-primary"
     when Subject::Status::IGNORED
