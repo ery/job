@@ -86,7 +86,4 @@ namespace :topic do
     puts "Created #{$created_topics.count}."
   end
 
-  def rubychina_url(url)
-  end
-
 end

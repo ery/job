@@ -13,10 +13,10 @@
   <tbody>
     <% subjects.each do |subject| %>
     <tr>
-      <td><%= link_to draw_subject_status(subject), subject %></td>
-      <td><%= link_to subject.title, subject %></td>
-      <td><%= link_to subject.monthly_salary.to_s, subject %></td>
-      <td><%= link_to subject.annual_salary.to_s, subject %></td>
+      <td><%= link_to draw_subject_status(subject), subject.url, :target => '_blank' %></td>
+      <td><%= link_to subject.title, subject.url, :target => '_blank' %></td>
+      <td><%= link_to subject.monthly_salary.to_s, subject.url, :target => '_blank' %></td>
+      <td><%= link_to subject.annual_salary.to_s, subject.url, :target => '_blank' %></td>
       <td>
         <div class="btn-group">
 
