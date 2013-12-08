@@ -8,4 +8,5 @@ Job::Application.routes.draw do
     get :cared,    :on => :collection
   end
   root 'topics#inbox'
+  get 'rubychina' => 'rubychina_topics#index'
 end

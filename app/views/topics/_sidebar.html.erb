@@ -3,5 +3,4 @@
   <li><%= link_to title_badge("忽略的", Topic.ignored.count), ignored_topics_path %></li>
   <li><%= link_to title_badge("关注的", Topic.cared.count),   cared_topics_path %></li>
   <li><%= link_to title_badge("全部",   Topic.count),         topics_path %></li>
-  <li><%= link_to "新建招聘信息", new_topic_path %></li>
 </ul>

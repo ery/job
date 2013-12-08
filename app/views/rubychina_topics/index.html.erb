@@ -1,0 +1,22 @@
+<div class="page-header">
+  <h1>RubyChina Topics</h1>
+</div>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>标题</th>
+      <th>URL</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @topics.each do |topic| %>
+    <tr>
+      <td><%= link_to topic.title, topic.url, :target => '_blank' %></td>
+      <td><%= link_to topic.url, topic.url, :target => '_blank' %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
