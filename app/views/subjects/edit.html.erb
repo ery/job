@@ -1,0 +1,14 @@
+<%= draw_action_header %>
+
+<%= form_for(@subject, :html => {:role => "form"}) do |f| %>
+
+<%= render 'form', :subject => @subject, :form => f %>
+
+<div class="well">
+  <div class="btn-toolbar">
+    <%= f.submit('Update', :class => "btn btn-default") %>
+    <button type="button" class="btn btn-default"><%= link_to('Back', @subject) %></button>
+  </div>
+</div>
+
+<% end %>

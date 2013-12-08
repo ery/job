@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20131207193046) do
 
-  create_table "rubychina_topics", force: true do |t|
+  create_table "rubychina_subjects", force: true do |t|
     t.string   "title"
     t.string   "orginal_id"
     t.string   "url"
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20131207193046) do
     t.datetime "updated_at"
   end
 
-  create_table "topics", force: true do |t|
+  create_table "subjects", force: true do |t|
     t.string   "title"
     t.string   "url"
     t.text     "memo"

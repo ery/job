@@ -1,3 +1,22 @@
-<%= draw_action_header "All topics (#{@topics.count})." %>
+<div class="page-header">
+  <h1>RubyChina (<%= @Topic.count %>) Subjects</h1>
+</div>
 
-<%= render 'list', :topics => @topics %>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>标题</th>
+      <th>URL</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @topics.each do |topic| %>
+    <tr>
+      <td><%= link_to topic.title, topic.url, :target => '_blank' %></td>
+      <td><%= link_to topic.url, topic.url, :target => '_blank' %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+

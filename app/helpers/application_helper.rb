@@ -6,11 +6,11 @@ module ApplicationHelper
 
   def draw_topic_status(topic)
     case topic.status
-    when Topic::Status::INBOX
+    when Subject::Status::INBOX
       content_tag :span, "Inbox", :class => "label label-primary"
-    when Topic::Status::IGNORED
+    when Subject::Status::IGNORED
       content_tag :span, "Ignored", :class => "label label-default"
-    when Topic::Status::CARED
+    when Subject::Status::CARED
       content_tag :span, "Cared", :class => "label label-danger"
     end
   end

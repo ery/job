@@ -1,4 +1,4 @@
-class Topic < ActiveRecord::Base
+class Subject < ActiveRecord::Base
   module Status
     INBOX   = "inbox"
     IGNORED = "ignored"

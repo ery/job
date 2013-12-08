@@ -1,14 +1,14 @@
 require 'test_helper'
 
-class TopicsControllerTest < ActionController::TestCase
+class SubjectsControllerTest < ActionController::TestCase
   setup do
-    @topic = topics(:one)
+    @topic = subjects(:one)
   end
 
   test "should get index" do
     get :index
     assert_response :success
-    assert_not_nil assigns(:topics)
+    assert_not_nil assigns(:subjects)
   end
 
   test "should get new" do
@@ -17,7 +17,7 @@ class TopicsControllerTest < ActionController::TestCase
   end
 
   test "should create topic" do
-    assert_difference('Topic.count') do
+    assert_difference('Subject.count') do
       post :create, topic: { memo: @topic.memo, title: @topic.title, url: @topic.url }
     end
 
@@ -40,10 +40,10 @@ class TopicsControllerTest < ActionController::TestCase
   end
 
   test "should destroy topic" do
-    assert_difference('Topic.count', -1) do
+    assert_difference('Subject.count', -1) do
       delete :destroy, id: @topic
     end
 
-    assert_redirected_to topics_path
+    assert_redirected_to subjects_path
   end
 end

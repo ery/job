@@ -1,3 +1,3 @@
-class RubychinaTopic < ActiveRecord::Base
+class RubychinaSubject < ActiveRecord::Base
 
 end

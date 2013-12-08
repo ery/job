@@ -1,0 +1,44 @@
+<%= draw_action_header @subject.title %>
+
+<p id="notice"><%= notice %></p>
+
+<div class="well">
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary"><%= link_to '打开', @subject.url, :target => "_blank" %></button>
+    <button type="button" class="btn btn-default"><%= link_to '收件箱', putinbox_subject_path(@subject), method: :put %></button>
+    <button type="button" class="btn btn-default"><%= link_to '忽略', ignore_subject_path(@subject), method: :put %></button>
+    <button type="button" class="btn btn-default"><%= link_to '关注', care_subject_path(@subject), method: :put %></button>
+    <button type="button" class="btn btn-default"><%= link_to '编辑', edit_subject_path(@subject) %></button>
+    <button type="button" class="btn btn-default"><%= link_to '删除', @subject, method: :delete, data: { confirm: 'Are you sure?' } %></button>
+  </div>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Status:</dt>
+  <dd><%= draw_subject_status(@subject) %></dd>
+</dl>
+
+<dl class="dl-horizontal">
+  <dt>Title:</dt>
+  <dd><%= @subject.title %></dd>
+</dl>
+
+<dl class="dl-horizontal">
+  <dt>URL:</dt>
+  <dd><%= link_to @subject.url, @subject.url %></dd>
+</dl>
+
+<dl class="dl-horizontal">
+  <dt>月薪:</dt>
+  <dd><%= @subject.monthly_salary %></dd>
+</dl>
+
+<dl class="dl-horizontal">
+  <dt>年薪:</dt>
+  <dd><%= @subject.annual_salary %></dd>
+</dl>
+
+<dl class="dl-horizontal">
+  <dt>Memo:</dt>
+  <dd><%= @subject.memo %></dd>
+</dl>

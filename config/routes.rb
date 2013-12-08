@@ -1,5 +1,7 @@
 Job::Application.routes.draw do
-  resources :topics do
+  get 'topics' => 'topics#index'
+
+  resources :subjects do
     put :putinbox, :on => :member
     put :ignore,   :on => :member
     put :care,     :on => :member
@@ -7,6 +9,6 @@ Job::Application.routes.draw do
     get :ignored,  :on => :collection
     get :cared,    :on => :collection
   end
-  root 'topics#inbox'
-  get 'rubychina' => 'rubychina_topics#index'
+
+  root 'subjects#inbox'
 end

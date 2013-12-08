@@ -1,0 +1,41 @@
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th style="min-width:  80px;">状态</th>
+      <th>标题</th>
+      <th style="min-width:  80px;">月薪</th>
+      <th style="min-width:  80px;">年薪</th>
+      <th style="min-width: 280px;"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% subjects.each do |subject| %>
+    <tr>
+      <td><%= link_to draw_subject_status(subject), subject %></td>
+      <td><%= link_to subject.title, subject %></td>
+      <td><%= link_to subject.monthly_salary.to_s, subject %></td>
+      <td><%= link_to subject.annual_salary.to_s, subject %></td>
+      <td>
+        <div class="btn-group">
+
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+              操作<span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><%= link_to '打开', subject.url, :target => "_blank" %></li>
+              <li><%= link_to '收件箱', putinbox_subject_path(subject), method: :put %></li>
+              <li><%= link_to '忽略', ignore_subject_path(subject), method: :put %></li>
+              <li><%= link_to '关注', care_subject_path(subject), method: :put %></li>
+              <li><%= link_to '编辑', edit_subject_path(subject) %></li>
+              <li><%= link_to '删除', subject, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+            </ul>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

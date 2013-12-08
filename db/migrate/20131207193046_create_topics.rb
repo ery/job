@@ -1,6 +1,6 @@
-class CreateRubychinaTopics < ActiveRecord::Migration
+class CreateRubychinaSubjects < ActiveRecord::Migration
   def change
-    create_table :rubychina_topics do |t|
+    create_table :rubychina_subjects do |t|
       t.string :title
       t.string :orginal_id
       t.string :url
