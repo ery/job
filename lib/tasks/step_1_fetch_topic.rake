@@ -1,6 +1,6 @@
 require 'open-uri'
 
-desc "Step 1 fetch topic"
+desc "Step 1 fetch topic, found download create topic."
 task :step_1_fetch_topic => :environment do
   $found_topics    = []
   $download_topics = []
