@@ -1,5 +1,5 @@
 class SubjectsController < ApplicationController
-  before_action :set_subject, only: [:show, :edit, :update, :destroy, :ignore, :care, :putinbox]
+  before_action :set_subject, only: [:show, :edit, :update, :ignore, :care, :putinbox]
 
   def inbox
     @subjects = Subject.inbox
@@ -57,11 +57,6 @@ class SubjectsController < ApplicationController
     else
       render action: 'edit'
     end
-  end
-
-  def destroy
-    @subject.destroy
-    redirect_to subjects_url
   end
 
   private
