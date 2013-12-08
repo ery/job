@@ -4,7 +4,7 @@
 
 <div class="well">
   <div class="btn-group">
-    <button type="button" class="btn btn-primary"><%= link_to '打开', @subject.url, :target => "_blank" %></button>
+    <button type="button" class="btn btn-default"><%= link_to '打开', @subject.url, :target => "_blank" %></button>
     <button type="button" class="btn btn-default"><%= link_to '收件箱', putinbox_subject_path(@subject), method: :put %></button>
     <button type="button" class="btn btn-default"><%= link_to '忽略', ignore_subject_path(@subject), method: :put %></button>
     <button type="button" class="btn btn-default"><%= link_to '关注', care_subject_path(@subject), method: :put %></button>
@@ -29,16 +29,16 @@
 </dl>
 
 <dl class="dl-horizontal">
-  <dt>月薪:</dt>
-  <dd><%= @subject.monthly_salary %></dd>
+  <dt>自动 薪水:</dt>
+  <dd><%= @subject.analyzed_salary %></dd>
 </dl>
 
 <dl class="dl-horizontal">
-  <dt>年薪:</dt>
-  <dd><%= @subject.annual_salary %></dd>
+  <dt>手动 薪水:</dt>
+  <dd><%= @subject.manual_salary %></dd>
 </dl>
 
 <dl class="dl-horizontal">
-  <dt>Memo:</dt>
-  <dd><%= @subject.memo %></dd>
+  <dt>手动 说明:</dt>
+  <dd><%= @subject.manual_memo %></dd>
 </dl>
