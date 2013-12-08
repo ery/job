@@ -27,12 +27,12 @@ ActiveRecord::Schema.define(version: 20131207193046) do
   create_table "subjects", force: true do |t|
     t.string   "title"
     t.string   "url"
-    t.text     "memo"
-    t.datetime "created_at"
-    t.datetime "updated_at"
     t.string   "status",         default: "inbox"
     t.string   "monthly_salary"
     t.string   "annual_salary"
+    t.text     "memo"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

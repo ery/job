@@ -1,4 +1,4 @@
-class CreateRubychinaSubjects < ActiveRecord::Migration
+class CreateTopics < ActiveRecord::Migration
   def change
     create_table :rubychina_subjects do |t|
       t.string :title
