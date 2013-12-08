@@ -71,7 +71,8 @@ class SubjectsController < ApplicationController
   end
 
   def subject_params
-    params.require(:subject).permit(:title, :url, :memo, :monthly_salary, :annual_salary)
+    params.require(:subject).permit(:manual_salary, :manual_memo)
   end
 
 end
+
