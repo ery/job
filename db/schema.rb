@@ -16,10 +16,9 @@ ActiveRecord::Schema.define(version: 20131209170351) do
   create_table "subjects", force: true do |t|
     t.string   "title"
     t.string   "url"
-    t.string   "status",          default: "inbox"
-    t.string   "analyzed_salary"
+    t.string   "status",        default: "inbox"
     t.string   "manual_salary"
-    t.string   "memo"
+    t.string   "manual_memo"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -28,6 +27,7 @@ ActiveRecord::Schema.define(version: 20131209170351) do
     t.string   "title"
     t.string   "url"
     t.string   "file"
+    t.string   "analyzed_salary"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

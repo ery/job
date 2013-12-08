@@ -1,6 +1,6 @@
 
-desc "Step 3 create subject"
-task :step_3_create_subject => :environment do
+desc "Step 2 create subject"
+task :step_2_create_subject => :environment do
   Topic.all.each do |topic|
     print "."
     create_subject topic
