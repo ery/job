@@ -3,9 +3,10 @@
   <thead>
     <tr>
       <th style="min-width:  80px;">状态</th>
-      <th>标题</th>
-      <th style="min-width:  80px;">月薪</th>
-      <th style="min-width:  80px;">年薪</th>
+      <th style="min-width:  80px;">标题</th>
+      <th style="min-width:  80px;">(自动)薪资</th>
+      <th style="min-width:  80px;">(手动)薪资</th>
+      <th style="min-width:  80px;">说明</th>
       <th style="min-width: 280px;"></th>
     </tr>
   </thead>
@@ -14,9 +15,10 @@
     <% subjects.each do |subject| %>
     <tr>
       <td><%= link_to draw_subject_status(subject), subject.url, :target => '_blank' %></td>
-      <td><%= link_to subject.title, subject.url, :target => '_blank' %></td>
-      <td><%= link_to subject.monthly_salary.to_s, subject.url, :target => '_blank' %></td>
-      <td><%= link_to subject.annual_salary.to_s, subject.url, :target => '_blank' %></td>
+      <td><%= link_to subject.title.to_s, subject.url, :target => '_blank' %></td>
+      <td><%= link_to subject.analyzed_salary.to_s, subject.url, :target => '_blank' %></td>
+      <td><%= link_to subject.manual_salary.to_s, subject.url, :target => '_blank' %></td>
+      <td><%= link_to subject.memo.to_s, subject.url, :target => '_blank' %></td>
       <td>
         <div class="btn-group">
 

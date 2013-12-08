@@ -4,28 +4,35 @@ namespace :topic do
 
   desc "Analyze"
   task :analyze => :environment do
-    Subject.delete_all
-
     Topic.all.each do |topic|
       print "."
+
+      next unless topic.title.include?("北京")
+      create_subject topic
       analyze_topic topic
     end
     puts "."
   end
 
-  def analyze_topic(topic)
-    unless topic.title.include?("北京")
+  def create_subject(topic)
+    if Subject.where(:url => topic.url).exists?
       return
     end
 
-    annual_salary = analyze_salary(topic)
-
     Subject.create!({
-      :title => topic.title,
-      :url => topic.url,
-      :annual_salary => annual_salary,
+      :title  => topic.title,
+      :url    => topic.url,
       :status => Subject::Status::INBOX
       })
+  end
+
+  def analyze_topic(topic)
+    subject = Subject.find_by_url!(topic.url)
+
+    salary = analyze_salary(topic)
+
+    subject.salary = salary
+    subject.save!
   end
 
   def analyze_salary(topic)
