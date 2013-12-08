@@ -77,7 +77,7 @@ namespace :topic do
       puts "URL:        #{topic[:url]}"
       puts "Author:     #{topic[:author]}"
       puts "Author URL: #{topic[:author_url]}"
-      puts "File:       #{topic[:file]}"
+      puts "File:       #{topic[:local_file]}"
       puts
     end
 

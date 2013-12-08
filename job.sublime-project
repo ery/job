@@ -1,0 +1,30 @@
+{
+  "folders":
+  [
+    {
+      "path": ".",
+      "folder_exclude_patterns":
+      [
+        "db/topics",
+        "tmp"
+      ],
+      "file_exclude_patterns":
+      [
+        "Gemfile.lock",
+        "*.sqlite3",
+        ".rvmrc",
+        ".gitignore",
+        "tags",
+        ".tags"
+      ]
+    }
+  ],
+  "settings":
+  {
+    "word_wrap": false,
+    "tab_size": 2,
+    "draw_white_space": "all",
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true
+  }
+}

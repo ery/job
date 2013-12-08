@@ -1,0 +1,2185 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Do",
+				"download_topic"
+			],
+			[
+				"t",
+				"topics"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"C",
+				"Care"
+			],
+			[
+				"st",
+				"Status"
+			],
+			[
+				"whe",
+				"where"
+			],
+			[
+				"ig",
+				"ignore"
+			],
+			[
+				"S",
+				"Sale"
+			],
+			[
+				"ca",
+				"cannot"
+			],
+			[
+				"co",
+				"complete"
+			],
+			[
+				"can",
+				"can_reason"
+			],
+			[
+				"ase",
+				"assert_can"
+			],
+			[
+				"v",
+				"void"
+			],
+			[
+				"asser",
+				"assert_class_cannot"
+			],
+			[
+				"is",
+				"is_new_record"
+			],
+			[
+				"mo",
+				"model_not"
+			],
+			[
+				"fl",
+				"follow"
+			],
+			[
+				"ass",
+				"assert_can"
+			],
+			[
+				"Pur",
+				"Purchase"
+			],
+			[
+				"fe",
+				"feature"
+			],
+			[
+				"reve",
+				"receive"
+			],
+			[
+				"the_sale_",
+				"the_sale_offset"
+			],
+			[
+				"the_void",
+				"the_void_bill"
+			],
+			[
+				"new",
+				"new_payment"
+			],
+			[
+				"the_pru",
+				"the_purchase_returning"
+			],
+			[
+				"re",
+				"reason"
+			],
+			[
+				"line_",
+				"line_item"
+			],
+			[
+				"rep",
+				"report"
+			],
+			[
+				"repot",
+				"report_class_name"
+			],
+			[
+				"get",
+				"get_entity_type"
+			],
+			[
+				"assert",
+				"assert"
+			],
+			[
+				"def",
+				"def	def … end"
+			],
+			[
+				"assert_",
+				"assert_query_failed"
+			],
+			[
+				"begin_",
+				"begin_year"
+			],
+			[
+				"en",
+				"entity_type"
+			],
+			[
+				"wh",
+				"when	when …"
+			],
+			[
+				"ta",
+				"table_number"
+			],
+			[
+				"beg",
+				"begin_month"
+			],
+			[
+				"show",
+				"show_currency_column"
+			],
+			[
+				"rp",
+				"report"
+			],
+			[
+				"be",
+				"begin_month"
+			],
+			[
+				"sam",
+				"EventSample"
+			],
+			[
+				"current",
+				"current_department"
+			],
+			[
+				"dep",
+				"department"
+			],
+			[
+				"comp",
+				"complex"
+			],
+			[
+				"lo",
+				"logger"
+			],
+			[
+				"PurchaseRe",
+				"PurchaseReturning"
+			],
+			[
+				"su",
+				"summary"
+			],
+			[
+				"de",
+				"department"
+			],
+			[
+				"to_",
+				"to_sym"
+			],
+			[
+				"com",
+				"company_id"
+			],
+			[
+				"period",
+				"period"
+			],
+			[
+				"op",
+				"options"
+			],
+			[
+				"ev",
+				"event_amount"
+			],
+			[
+				"evn",
+				"event"
+			],
+			[
+				"ec",
+				"each"
+			],
+			[
+				"add_",
+				"add_column"
+			],
+			[
+				"li",
+				"limit_count"
+			],
+			[
+				"coll",
+				"Collection"
+			],
+			[
+				"SaleReturning",
+				"SaleReturningCollection"
+			],
+			[
+				"sale_",
+				"sale_collection"
+			],
+			[
+				"Sale",
+				"SaleReturningReceiving"
+			],
+			[
+				"SaleRturn",
+				"SaleReturningOffset"
+			],
+			[
+				"type",
+				"type_list"
+			],
+			[
+				"ana",
+				"analyse_type"
+			],
+			[
+				"sa",
+				"sale"
+			],
+			[
+				"sale",
+				"sale_refund"
+			],
+			[
+				"Comp",
+				"Company"
+			],
+			[
+				"name",
+				"namespace"
+			],
+			[
+				"up",
+				"upcost"
+			],
+			[
+				"sel",
+				"self"
+			],
+			[
+				"lin",
+				"line_item"
+			],
+			[
+				"con",
+				"contents"
+			],
+			[
+				"produ",
+				"product"
+			],
+			[
+				"produc",
+				"products"
+			],
+			[
+				"pro",
+				"product"
+			],
+			[
+				"cla",
+				"cla	class .. < ParentClass .. initialize .. end"
+			],
+			[
+				"Com",
+				"Company"
+			],
+			[
+				"is_a",
+				"is_a_in"
+			],
+			[
+				"em",
+				"email"
+			],
+			[
+				"cl",
+				"cla	class .. end"
+			],
+			[
+				"ex",
+				"expired_at"
+			],
+			[
+				"el",
+				"elements"
+			],
+			[
+				"emp",
+				"empty"
+			],
+			[
+				"Char",
+				"chargecode"
+			],
+			[
+				"to",
+				"token"
+			],
+			[
+				"shee",
+				"sheet_type"
+			],
+			[
+				"xx",
+				"xxxxxxx"
+			],
+			[
+				"sui",
+				"suitup-commit-1020"
+			],
+			[
+				"table",
+				"table_list"
+			],
+			[
+				"dem",
+				"department"
+			],
+			[
+				"line",
+				"bill_line_item"
+			],
+			[
+				"acc",
+				"accouts"
+			],
+			[
+				"all",
+				"all_accouts"
+			],
+			[
+				"cu",
+				"current_compnay"
+			],
+			[
+				"sales",
+				"Sales"
+			],
+			[
+				"bill",
+				"bills"
+			],
+			[
+				"fin",
+				"find	suitup.find_visable_list"
+			],
+			[
+				"b",
+				"B	Tag"
+			],
+			[
+				"pry",
+				"binding.pry"
+			],
+			[
+				"af",
+				"aftvoc	after_validation on create"
+			],
+			[
+				"depart",
+				"department"
+			],
+			[
+				"class",
+				"class_list"
+			],
+			[
+				"ele",
+				"else"
+			],
+			[
+				"in",
+				"increament"
+			],
+			[
+				"if",
+				"if	if … end"
+			],
+			[
+				"p",
+				"price"
+			],
+			[
+				"deli",
+				"delivery"
+			],
+			[
+				"as",
+				"assert"
+			],
+			[
+				"make_sale_d",
+				"make_sale_delivery"
+			],
+			[
+				"make_purchase_",
+				"make_purchase_receiving"
+			],
+			[
+				"wit",
+				"is_with_product"
+			],
+			[
+				"unit_c",
+				"unit_cost"
+			],
+			[
+				"pr",
+				"product"
+			],
+			[
+				"diff",
+				"diff_list"
+			],
+			[
+				"department_1",
+				"department_1_product_1_quantity"
+			],
+			[
+				"line_ite",
+				"line_items"
+			],
+			[
+				"model_",
+				"model_class"
+			],
+			[
+				"mod",
+				"model"
+			],
+			[
+				"ac",
+				"action_name"
+			],
+			[
+				"modle",
+				"model_type"
+			],
+			[
+				"user",
+				"user"
+			],
+			[
+				"u",
+				"user"
+			],
+			[
+				"number",
+				"number_prefix"
+			],
+			[
+				"nam",
+				"name"
+			],
+			[
+				"c",
+				"cla	ClassName = Struct .. do .. end"
+			],
+			[
+				"Re",
+				"Refactor"
+			],
+			[
+				"tr",
+				"true"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "lib/tasks/topic.analyze.rake",
+			"settings":
+			{
+				"buffer_size": 142,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/subject.rb",
+			"settings":
+			{
+				"buffer_size": 304,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "job.sublime-project",
+			"settings":
+			{
+				"buffer_size": 471,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Ruby/Ruby.sublime-build",
+	"command_palette":
+	{
+		"height": 327.0,
+		"selected_items":
+		[
+			[
+				"py",
+				"Set Syntax: Python"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown Extended"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"git log",
+				"Git: Log Current File"
+			],
+			[
+				"c++",
+				"Set Syntax: C++"
+			],
+			[
+				"makr",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markdown",
+				"Set Syntax: Markdown Extended"
+			],
+			[
+				"markdow",
+				"Set Syntax: Markdown Extended"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"set mak",
+				"Set Syntax: Markdown"
+			],
+			[
+				"dif",
+				"Set Syntax: Diff"
+			],
+			[
+				"diff",
+				"Set Syntax: Diff"
+			],
+			[
+				"haml",
+				"Set Syntax: Ruby Haml"
+			],
+			[
+				"set syn c",
+				"Set Syntax: C"
+			],
+			[
+				"ma",
+				"Set Syntax: Markdown"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"set log",
+				"Set Syntax: logcat"
+			],
+			[
+				"syntax ",
+				"Set Syntax: TeX"
+			],
+			[
+				"log",
+				"Set Syntax: LaTeX Log"
+			],
+			[
+				"coffee",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"gitl og",
+				"Git: Log All"
+			],
+			[
+				"git",
+				"Set Syntax: Git Commit Message"
+			],
+			[
+				"gi tlog",
+				"Git: Log Current File"
+			],
+			[
+				"git ",
+				"Set Syntax: Git Commit Message"
+			],
+			[
+				"set git",
+				"Set Syntax: Git Commit Message"
+			],
+			[
+				"git show",
+				"Git: Show Current File"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"set html",
+				"Set Syntax: HTML"
+			],
+			[
+				"set java",
+				"Set Syntax: Java"
+			],
+			[
+				"set ruby",
+				"Set Syntax: Ruby on Rails"
+			],
+			[
+				"sethtml",
+				"Set Syntax: HTML"
+			],
+			[
+				"set jsp",
+				"Set Syntax: Java Server Page (JSP)"
+			],
+			[
+				"set haml",
+				"Set Syntax: Ruby Haml"
+			],
+			[
+				"sethaml",
+				"Set Syntax: Ruby Haml"
+			],
+			[
+				"set",
+				"Set Syntax: Java"
+			],
+			[
+				"set ja",
+				"Set Syntax: Java"
+			],
+			[
+				"set h",
+				"Set Syntax: Ruby Haml"
+			],
+			[
+				"set yml",
+				"Set Syntax: YAML"
+			],
+			[
+				"set ham",
+				"Set Syntax: Ruby Haml"
+			],
+			[
+				"setrub",
+				"Set Syntax: Ruby Haml"
+			],
+			[
+				"ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"c+",
+				"Set Syntax: C++"
+			],
+			[
+				"pyho",
+				"Set Syntax: Python"
+			],
+			[
+				"ham",
+				"Set Syntax: Ruby Haml"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"ru",
+				"Set Syntax: Ruby on Rails"
+			],
+			[
+				"pry",
+				"Snippet: pry"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"gitlog",
+				"Git: Log All"
+			],
+			[
+				"pyton",
+				"Set Syntax: Python"
+			],
+			[
+				"Pytho",
+				"SublimeREPL: Python - Sublime Text 2"
+			],
+			[
+				"git lo",
+				"Git: Log Current File"
+			],
+			[
+				"git di",
+				"Git: Diff All"
+			],
+			[
+				"set slim",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"slim",
+				"Snippet: link_to model"
+			],
+			[
+				"set c",
+				"Set Syntax: C#"
+			],
+			[
+				"setbash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"git stat	",
+				"Git: Status"
+			],
+			[
+				"git com",
+				"Set Syntax: Git Commit Message"
+			],
+			[
+				"git diff",
+				"Git: Diff Staged"
+			],
+			[
+				"git br	",
+				"Git: Change Branch"
+			],
+			[
+				"git ch",
+				"Git: Change Branch"
+			],
+			[
+				"git cha",
+				"Git: Change Branch"
+			],
+			[
+				"pytho",
+				"Set Syntax: Python"
+			],
+			[
+				"next",
+				"Bookmarks: Select Next"
+			],
+			[
+				"git g",
+				"Git: Graph All"
+			],
+			[
+				"git  log",
+				"Git: Log All"
+			],
+			[
+				"git st",
+				"Git: Show Tags"
+			],
+			[
+				"c#",
+				"Set Syntax: C#"
+			],
+			[
+				"gitl",
+				"Git: Log All"
+			],
+			[
+				"ruby ex",
+				"RubyTest: Extract Local Variable"
+			],
+			[
+				"ruby test",
+				"RubyTest: Extract Local Variable"
+			],
+			[
+				"GIT LOG",
+				"Git: Log All"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"git bra",
+				"Git: Change Branch"
+			],
+			[
+				"GIT br	",
+				"Git: Change Branch"
+			],
+			[
+				"git log all",
+				"Git: Log All"
+			],
+			[
+				"gitbra",
+				"Git: Change Branch"
+			],
+			[
+				"Snippet: pry",
+				"Snippet: pry"
+			],
+			[
+				"yml",
+				"Set Syntax: YAML"
+			],
+			[
+				"Snippet: ",
+				"Snippet: pry"
+			],
+			[
+				"list p",
+				"Package Control: List Packages"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"use",
+				"Preferences: Global Settings - User"
+			],
+			[
+				"user",
+				"Preferences: Global Settings - User"
+			],
+			[
+				"pa",
+				"Package Control: List Packages"
+			],
+			[
+				"go",
+				"Set Syntax: Go"
+			],
+			[
+				"save",
+				"File: Save All"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"close",
+				"File: Close All"
+			],
+			[
+				"close all",
+				"File: Close All"
+			]
+		],
+		"width": 647.0
+	},
+	"console":
+	{
+		"height": 576.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/ery/Desktop/job/db/topics/2081.html",
+		"/home/ery/Documents/ery/todo/tmp.md",
+		"/home/ery/Desktop/job/job.sublime-project",
+		"/home/ery/Desktop/job/lib/tasks/topic.fetch.rake",
+		"/home/ery/Desktop/job/db/migrate/20131209170351_create_subjects.rb",
+		"/home/ery/Desktop/job/db/migrate/20131207193046_create_topics.rb",
+		"/home/ery/Desktop/job/db/migrate/20131205170351_create_subjects.rb",
+		"/home/ery/Desktop/job/app/controllers/topics_controller.rb",
+		"/home/ery/Desktop/job/app/controllers/subjects_controller.rb",
+		"/home/ery/Desktop/job/app/models/topic.rb",
+		"/home/ery/Desktop/job/app/models/subject.rb",
+		"/home/ery/Desktop/job/config/routes.rb",
+		"/home/ery/Desktop/job/app/views/layouts/application.html.erb",
+		"/home/ery/Desktop/job/db/migrate/20131205224710_add_topic_salary.rb",
+		"/home/ery/Desktop/job/db/migrate/20131205195233_add_topic_status.rb",
+		"/home/ery/Desktop/job/app/views/topics/index.html.erb",
+		"/home/ery/Desktop/job/app/views/subjects/_list.html.erb",
+		"/home/ery/Desktop/job/app/views/subjects/cared.html.erb",
+		"/home/ery/Desktop/job/app/views/subjects/edit.html.erb",
+		"/home/ery/Desktop/job/app/views/subjects/show.html.erb",
+		"/home/ery/Desktop/job/app/views/layouts/_action_header.html.erb",
+		"/home/ery/Desktop/job/app/views/subjects/_form.html.erb",
+		"/home/ery/Desktop/job/app/views/rubychina_topics/index.html.erb",
+		"/home/ery/Desktop/job/app/views/subjects/_sidebar.html.erb",
+		"/home/ery/Desktop/job/app/views/subjects/ignored.html.erb",
+		"/home/ery/Desktop/job/app/views/subjects/inbox.html.erb",
+		"/home/ery/Desktop/job/app/views/subjects/index.html.erb",
+		"/home/ery/Desktop/job/db/schema.rb",
+		"/home/ery/Desktop/job/db/migrate/20131205170351_create_topics.rb",
+		"/home/ery/Desktop/job/db/migrate/20131207193046_create_rubychina_topics.rb",
+		"/home/ery/Desktop/job/lib/tasks/rubychina.analyze_job_topics.rake",
+		"/home/ery/Desktop/job/lib/tasks/rubychina.fetch_job_topics.rake",
+		"/home/ery/Desktop/job/test/controllers/topics_controller_test.rb",
+		"/home/ery/Desktop/job/app/assets/stylesheets/topics.css.scss",
+		"/home/ery/Desktop/job/app/helpers/application_helper.rb",
+		"/home/ery/Desktop/job/app/helpers/topics_helper.rb",
+		"/home/ery/Desktop/job/app/models/rubychina_topic.rb",
+		"/home/ery/Desktop/job/test/helpers/topics_helper_test.rb",
+		"/home/ery/Desktop/job/test/models/topic_test.rb",
+		"/home/ery/Desktop/job/app/controllers/rubychina_topics_controller.rb",
+		"/home/ery/Documents/job/app/views/rubychina_topics/index.html.erb",
+		"/home/ery/Desktop/job/app/views/rubychina_topics/_sidebar.html.erb",
+		"/home/ery/Desktop/job/app/views/topics/edit.html.erb",
+		"/home/ery/Desktop/job/app/views/topics/_sidebar.html.erb",
+		"/home/ery/Desktop/job/app/views/topics/new.html.erb",
+		"/home/ery/Desktop/job/app/views/rubychina_topics/_siderbart.html.erb",
+		"/home/ery/Desktop/job/app/views/topics/_list.html.erb",
+		"/home/ery/Documents/job/.gitignore",
+		"/home/ery/Desktop/job/db/seeds.rb",
+		"/home/ery/Documents/ery/scripts/sources/suitup-development.sh",
+		"/home/ery/Desktop/job/Gemfile",
+		"/home/ery/Desktop/job/app/views/topics/show.html.erb",
+		"/home/ery/Desktop/job/app/controllers/home_controller.rb",
+		"/home/ery/Desktop/job/app/views/home/index.html.erb",
+		"/home/ery/Desktop/job/app/views/layouts/ajax_layout.html.erb",
+		"/home/ery/.rvm/gems/ruby-2.0.0-p247@job/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb",
+		"/home/ery/Desktop/job/app/views/topics/inbox.html.erb",
+		"/home/ery/Desktop/job/app/views/topics/_form.html.erb",
+		"/home/ery/Desktop/job/app/assets/stylesheets/application.css",
+		"/home/ery/Desktop/job/vendor/assets/stylesheets/bootstrap.css",
+		"/home/ery/Desktop/job/vendor/assets/stylesheets/bootstrap-theme.css",
+		"/home/ery/Desktop/job/app/views/topics/ignored.html.erb",
+		"/home/ery/Desktop/job/app/views/topics/cared.html.erb",
+		"/home/ery/Desktop/job/app/views/topics/all.html.erb",
+		"/home/ery/Desktop/job/db/migrate/20131205193313_add_topic_ignored.rb",
+		"/home/ery/.zshrc",
+		"/home/ery/Desktop/job/.rvmrc",
+		"/home/ery/Desktop/1.找工作/招聘信息/care.html",
+		"/home/ery/Desktop/1.找工作/招聘信息/pass.html",
+		"/home/ery/Desktop/小龙人伴奏(歌词MP3下载) - 小龙人 - 5SING中国原创音乐基地.html",
+		"/home/ery/Desktop/1.找工作/招聘信息/unread.html",
+		"/home/ery/Desktop/1.找工作/招聘信息/read.html",
+		"/home/ery/Desktop/1.找工作/简历/中文/Ery简历.md",
+		"/home/ery/Desktop/1.找工作/简历/中文/Ery简历.html",
+		"/home/ery/Desktop/1.找工作/招聘信息/un_read.html",
+		"/home/ery/Desktop/1.找工作/招聘信息/jobs.html",
+		"/home/ery/data/VirtualBox/Windows/Win7-Ery/Win7-Ery.vbox",
+		"/home/ery/Desktop/1.找工作/招聘信息/vip.html",
+		"/home/ery/Desktop/1.找工作/招聘信息/isofttalent.html",
+		"/home/ery/Desktop/1.找工作/招聘信息/jobs (copy).html",
+		"/home/ery/Desktop/bookmarks_12_3_13.html",
+		"/home/ery/Desktop/jobs.html",
+		"/home/ery/Desktop/untitled",
+		"/home/ery/Desktop/1.找工作/简历/英文/Ery.md",
+		"/home/ery/Desktop/1.找工作/简历/2013年11月30日/EryResume.md",
+		"/home/ery/Desktop/1.找工作/简历/Ery简历.md",
+		"/home/ery/Desktop/1.简历/Ery简历.md",
+		"/home/ery/Documents/awebook/test/functional/accounting_subjects_controller_test.rb",
+		"/home/ery/Documents/awebook/test/functional/vouchers_controller_test.rb",
+		"/home/ery/Desktop/voucher_item.rb",
+		"/home/ery/Documents/awebook/test/functional/bills/sales_controller_test.rb",
+		"/home/ery/Documents/awebook/test/factories/bill.rb",
+		"/home/ery/Documents/awebook/app/models/voucher.rb",
+		"/home/ery/Documents/awebook/test/functional/payments/purchase_returning_refunds_controller_test.rb",
+		"/home/ery/Documents/awebook/test/functional/departments_controller_test.rb",
+		"/home/ery/Documents/awebook/app/controllers/accounting_subjects_controller.rb",
+		"/home/ery/Documents/awebook/test/test_helper/functional_helper.rb",
+		"/home/ery/Documents/awebook/test/functional/employees_controller_test.rb",
+		"/home/ery/.rvm/gems/ruby-2.0.0-p247@awebook/gems/actionpack-3.2.12/lib/action_dispatch/testing/assertions/response.rb",
+		"/home/ery/.rvm/gems/ruby-2.0.0-p247@awebook/gems/devise-2.1.2/test/support/integration.rb",
+		"/home/ery/Documents/awebook/lib/awebook/models/cannot_parts/cannot_base_part.rb",
+		"/home/ery/Desktop/宝雷杭的商业计划书.asc",
+		"/home/ery/Documents/awebook/lib/awebook/models/cannot_parts/cannot_bill_part.rb",
+		"/home/ery/Documents/awebook/lib/awebook/models/cannot_parts/cannot_element_part.rb",
+		"/home/ery/Documents/awebook/lib/awebook/models/cannot_parts/cannot_event_part.rb",
+		"/home/ery/Documents/awebook/test/unit/cannot_element_test.rb",
+		"/home/ery/Documents/awebook/test/unit/cannot_bill_test.rb",
+		"/home/ery/Documents/awebook/config/locales/cannot.yml",
+		"/home/ery/Documents/awebook/test/test_helper/cannot_helper.rb",
+		"/home/ery/Documents/awebook/test/unit/cannot_event_test.rb",
+		"/home/ery/Desktop/cannot/cannot_test/unit_test_16.rb",
+		"/home/ery/Desktop/cannot/cannot_test/unit_test_15.rb",
+		"/home/ery/Desktop/cannot/cannot_test/unit_test_14.rb",
+		"/home/ery/Desktop/cannot/cannot_test/unit_test_11.rb",
+		"/home/ery/Desktop/cannot/cannot_test/unit_test_10.rb",
+		"/home/ery/Desktop/cannot/cannot_test/unit_test_09.rb",
+		"/home/ery/Desktop/cannot/cannot_test/unit_test_12.rb",
+		"/home/ery/Desktop/cannot/cannot_test/unit_test_13.rb",
+		"/home/ery/Desktop/cannot/cannot_test/unit_test_01.rb",
+		"/home/ery/Desktop/cannot/cannot_test/unit_test_9.rb",
+		"/home/ery/Desktop/cannot/cannot_test/unit_test_7.rb",
+		"/home/ery/Desktop/cannot/cannot_test/unit_test_6.rb",
+		"/home/ery/Desktop/cannot/cannot_test/unit_test_8.rb",
+		"/home/ery/data/ery/Soft/Windows/other/load/cf1/Hotn0814/data/biaoqian@sex8性吧最新地址.mht",
+		"/home/ery/Documents/awebook/test/test_helper.rb",
+		"/home/ery/Desktop/0001-No-message..patch",
+		"/home/ery/Desktop/cannot/cannot_test/unit_test_5.rb",
+		"/home/ery/Desktop/cannot/cannot_test/unit_test_4.rb"
+	],
+	"find":
+	{
+		"height": 48.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"-*.html",
+			"",
+			"*.yml",
+			"",
+			"*.yml",
+			"",
+			"-suitup-git-diff.COMMIT_EDITMSG",
+			"",
+			"*.yml",
+			"",
+			"*.yml",
+			"",
+			"*.rb",
+			"*.b",
+			"",
+			"*.haml",
+			"",
+			"*.rb",
+			"",
+			"*.yml",
+			"",
+			"*.rb",
+			"",
+			"*.rb",
+			"",
+			"*.rb",
+			".rb",
+			"",
+			"*.rb",
+			"",
+			"*.yml",
+			"",
+			"/home/ery/.rvm/gems/ruby-1.9.3-p0@awebook/gems/showbuilder-0.0.12/lib/",
+			"",
+			"/home/ery/awebook/test/test_helper",
+			"",
+			"*.yml",
+			"",
+			"*.yml",
+			"",
+			"/home/ery/.rvm/gems/ruby-1.9.3-p0@awebook/gems/devise-2.1.2/",
+			"/home/ery/.rvm/gems/ruby-1.9.3-p0@awebook/gems/devise-2.1.2/lib/devise",
+			"",
+			"<open folders>",
+			"",
+			"/home/ery/awebook/db/migrate",
+			"",
+			"/home/ery/awebook/db/migrate",
+			"",
+			"/home/ery/awebook/test/integration",
+			"",
+			"*.yml",
+			"<open folders>",
+			"",
+			"*.yml",
+			"<open folders>",
+			"",
+			"/home/ery/Documents/suitup/script",
+			"<open folders>",
+			"",
+			"*.yml",
+			"<open folders>",
+			"",
+			"<open files>",
+			"",
+			"*.rb,/home/ery/Documents/awebook",
+			"*.rb",
+			"",
+			"*.rb",
+			"",
+			"/home/ery/Documents/awebook/test",
+			"",
+			"/home/ery/Documents/awebook/config",
+			"",
+			"/home/ery/Documents/awebook/lib",
+			"/home/ery/Documents/awebook/app",
+			"",
+			"/home/ery/Documents/awebook/app",
+			"",
+			"/home/ery/Documents/awebook/app/models",
+			"<open folders>",
+			"",
+			"/home/ery/Documents/awebook/test/functional",
+			"<open folders>",
+			"",
+			"*.rb",
+			"",
+			"*.rb",
+			"",
+			"*.rb",
+			"",
+			"*.rb",
+			"",
+			"*.yml",
+			"",
+			"*.yml",
+			"",
+			"*.yml",
+			"",
+			"<open folders>",
+			"",
+			"/home/ery/Documents/awebook/",
+			"/home/ery/Documents/awebook/,-*.tags",
+			"/home/ery/Documents/awebook/",
+			"",
+			"/home/ery/Documents/awebook/",
+			"/home/ery/Documents/awebook/app/controllers",
+			"/home/ery/Documents/awebook",
+			"",
+			"*.yml",
+			"",
+			"*.yml",
+			"",
+			"/home/ery/Documents/awebook/test/",
+			"",
+			"/home/ery/Documents/awebook/test/integration",
+			"",
+			"/home/ery/Documents/awebook/test/integration",
+			"",
+			"/home/ery/Documents/awebook/test/integration",
+			"",
+			"<open files>",
+			"/home/ery/Documents/awebook/test/integration",
+			"",
+			"/home/ery/Documents/awebook/test/integration",
+			"",
+			"/home/ery/Documents/awebook/app",
+			"/home/ery/Documents/awebook"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"bundle",
+			"vendor",
+			"awebook",
+			"	",
+			"file",
+			"Subject",
+			", ",
+			"create_topic",
+			"ruby",
+			"RubychinaSubject",
+			"rubychina_topic",
+			"Topic",
+			"subjects",
+			"fetch_topics_form_page",
+			"fetch_subjects_form_page",
+			"subjects",
+			"topic",
+			"subjects",
+			"Topic",
+			"topics",
+			"Topic",
+			"topic",
+			"set_topic",
+			"topics",
+			"Topic",
+			"topic",
+			"Topic",
+			"topic",
+			"Topic",
+			"topic",
+			"Topic",
+			"topic",
+			"Topic",
+			"topic",
+			"Topic",
+			"topic",
+			"Topic",
+			"topic",
+			"Topic",
+			"topic",
+			"Topic",
+			"topic",
+			"Topic",
+			"topic",
+			"Topic",
+			"topic",
+			"Topic",
+			"def draw_action_header",
+			"topic_folder",
+			"url",
+			"local_file",
+			": ",
+			"file",
+			"sub",
+			"puts_topic",
+			"require",
+			"rails",
+			"Page",
+			"Download",
+			"download_topics_form_page",
+			"fetch",
+			"Fetch",
+			"fetch",
+			"Fetch",
+			"fetch",
+			"Fetch",
+			"fetch",
+			"Fetch",
+			"fetch",
+			"Fetch",
+			"file",
+			"fetch_job_topics_form",
+			"fetch_job_topic",
+			"fetch_job_topic_from_page",
+			"fetch_job_topics",
+			"Cared",
+			"Ignored",
+			"||= []",
+			"new_topic_list",
+			"Topic",
+			"topic_list",
+			"job",
+			"fetch_topic_from_page",
+			"fetch_job_from_page",
+			"job_list",
+			"job",
+			"save_job",
+			"topic_url",
+			"topic_title",
+			"topic_",
+			"job",
+			"binding.pry",
+			"pry",
+			"return",
+			"  ",
+			"job_list",
+			"url",
+			"job",
+			"development",
+			"~/\n",
+			"restart",
+			"1",
+			"index",
+			"page_count",
+			"page_url",
+			"puts_job",
+			"author_url",
+			"title",
+			"binding",
+			"line",
+			"button",
+			"Destroy",
+			"Edit",
+			"Care",
+			"Inbox",
+			"render",
+			"layout",
+			"topics",
+			"http://www.baidu.com",
+			"remote",
+			"def draw_topic_status",
+			"<span class=\"",
+			"content_tag",
+			"<dd>",
+			"<%",
+			"></",
+			"button",
+			"topics"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Subject",
+			"subjects",
+			"Subject",
+			"UnexpectedCase",
+			"toolbar_bill_receive_commit_to",
+			"toolbar_bill_receive_to",
+			"toolbar_bill_receive_commit_to",
+			"toolbar_bill_deliver_commit_to",
+			"toolbar_bill_deliver_to",
+			"cannot",
+			"is_without_product",
+			"get_sale_report_path",
+			"assert_show_sale_costing_report_wihtout_data",
+			"assert_show_sale_income_report_wihtout_data",
+			"assert_show_sale_total_report_wihtout_data",
+			"assert_show_month_sale_summary_report_with_data",
+			"assert_show_month_sale_summary_report_without_data",
+			"assert_show_month_sale_costing_report",
+			"assert_show_month_sale_total_report",
+			"assert_show_month_sale_income_report",
+			"assert_show_summary_report_failed",
+			"assert_show_day_sale_summary_report_with_data",
+			"assert_show_day_sale_summary_report_without_data",
+			"assert_show_day_sale_costing_report",
+			"assert_show_simplex_report_wihtout_data :show_costing",
+			"assert_show_day_sale_income_report",
+			"assert_show_simplex_report_wihtout_data :show_income",
+			"assert_show_day_sale_total_report",
+			"assert_show_simplex_report_wihtout_data :show_total",
+			"render \"reports/summary_period_statistic\"",
+			"render \"reports/summary_period\"",
+			"render \"reports/summary_base\"",
+			"render \"reports/summary_period_statistic\"",
+			"show_summary_report_action",
+			"show_summary_action",
+			"find_company_sale_summary_report_header",
+			"find_company_sale_simplex_report_header",
+			"get_complex_report_list",
+			"get_entity_period_complex_report_list",
+			"show_pagination_bar",
+			"QuerySaleReportError",
+			"query failed as",
+			"get_sale_report_controller_template",
+			"get_sale_report_controller_entity_params",
+			"assert_day_sale_costing_report",
+			"assert_day_sale_income_report",
+			"content_nav",
+			"get_department_summary_report_class",
+			"summery_report_params",
+			"company_sale_simplex_report_header",
+			"show_company_sale_simplex_report_header",
+			"department_line_period_sale_report_label",
+			"company_line_period_sale_report_label",
+			"department_line_period_sale_report_label",
+			"company_line_period_sale_report_label",
+			"include Awebook::Models::ReportParts::SaleComplexReportPart",
+			"xishu_create_base",
+			"xishu_create_customer_samples",
+			"xishu_create_vendor_samples",
+			"xishu_create_product_samples",
+			"xishu_create_purchase_samples",
+			"xishu_create_sale_samples",
+			"random_sample_name",
+			"using_company",
+			"report_params",
+			"= render \"reports/complex\", report: @report",
+			"include Awebook::Models::ReportParts::SaleComplexReportPart",
+			"SaleSimplexReportPart",
+			", department: @report.entity.name, year: @report.year, month: @report.month",
+			"add_event_sale_report_status_column",
+			"create_sale_report_node_table",
+			"create_sale_report_table",
+			"is_analyse_success_log_by_standard_output",
+			"is_analyse_success_puts_by_standard_output",
+			"is_show_success_info_by_standard_output",
+			"assert_sale_costing_report",
+			"assert_sale_income_report",
+			"assert_sale_total_report",
+			"test_helper/sale_report_test_helper",
+			"SaleReportTestHelper",
+			"include Awebook::Models::ReportParts::MonthSaleReportPart",
+			"= render \"reports/simplex\", report: @report",
+			"require File.expand_path('../helpers/helper_20130709151001', __FILE__)",
+			"require File.expand_path('../helpers/helper_20130214150101', __FILE__)",
+			"SaleReportPart",
+			"analyse",
+			"line_item_product_select_input_template",
+			"ComputingTasks",
+			"CannotComplete",
+			"CannotDeliver",
+			"CannotReceive",
+			"errors.cannot",
+			"CannotVoid",
+			"CanotVoid",
+			"inventory_shortage",
+			"InventoryShortage",
+			"Awebook::Models::ValidationParts",
+			"Awebook::Errors::NegativeBalance",
+			"Awebook::Errors::Negative",
+			"Awebook::Errors::UnexpectedModelType",
+			"Awebook::Errors::CanNotVoid",
+			"used_at",
+			"expired_at",
+			"expire_at",
+			"toolbar_form_button_to",
+			"toolbar_form_button",
+			"step_2_sent_email",
+			"losing",
+			"Losing",
+			"losing",
+			"loss",
+			"losings",
+			"Losings",
+			"event_final_total_cost",
+			"event_final_avg_cost",
+			"product_avg_cost",
+			"assert_product_avg_cost",
+			"avg_cost",
+			"event_final_total_quantity",
+			"event_decreament_total_cost",
+			"event_increament_total_cost",
+			"event_decreament_unit_cost",
+			"event_increament_unit_cost",
+			"Searching 696 files for \"event_increament_unit\"\nevent_increament_unit_cost",
+			"get_sheet_unit_cost",
+			"department_accounts",
+			"ProductDepartmentAccount",
+			"product_department_account"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "lib/tasks/topic.analyze.rake",
+					"settings":
+					{
+						"buffer_size": 142,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								122,
+								122
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/models/subject.rb",
+					"settings":
+					{
+						"buffer_size": 304,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								304,
+								304
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "job.sublime-project",
+					"settings":
+					{
+						"buffer_size": 471,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								103,
+								103
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 33.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 148.0
+	},
+	"output.find_results":
+	{
+		"height": 593.0
+	},
+	"output.git":
+	{
+		"height": 142.0
+	},
+	"output.tests":
+	{
+		"height": 142.0
+	},
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"20",
+				"db/topics/2081.html"
+			],
+			[
+				"subject",
+				"app/models/subject.rb"
+			],
+			[
+				"sub",
+				"db/migrate/20131205170351_create_subjects.rb"
+			],
+			[
+				"apphtml",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"sid",
+				"app/views/topics/_sidebar.html.erb"
+			],
+			[
+				"new",
+				"app/views/topics/new.html.erb"
+			],
+			[
+				"apphtmlerb",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"list",
+				"app/views/topics/_list.html.erb"
+			],
+			[
+				"action_header",
+				"app/views/layouts/_action_header.html.erb"
+			],
+			[
+				"apperb",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"topi",
+				"app/models/topic.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"rou",
+				"config/routes.rb"
+			],
+			[
+				"home",
+				"app/controllers/home_controller.rb"
+			],
+			[
+				"topics",
+				"app/controllers/topics_controller.rb"
+			],
+			[
+				"apphel",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"inbox",
+				"app/views/topics/inbox.html.erb"
+			],
+			[
+				"con",
+				"app/controllers/topics_controller.rb"
+			],
+			[
+				"appcss",
+				"app/assets/stylesheets/application.css"
+			],
+			[
+				"app",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"apph",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"topic",
+				"app/models/topic.rb"
+			],
+			[
+				"form",
+				"app/views/topics/_form.html.erb"
+			],
+			[
+				"show",
+				"app/views/topics/show.html.erb"
+			],
+			[
+				"all",
+				"app/views/topics/all.html.erb"
+			],
+			[
+				"contr",
+				"app/controllers/topics_controller.rb"
+			],
+			[
+				"ig",
+				"app/views/topics/ignored.html.erb"
+			],
+			[
+				"side",
+				"app/views/topics/_sidebar.html.erb"
+			],
+			[
+				"top",
+				"app/models/topic.rb"
+			],
+			[
+				"index",
+				"app/views/topics/index.html.erb"
+			],
+			[
+				"layou",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"seed",
+				"db/seeds.rb"
+			],
+			[
+				"voucher.rb",
+				"app/models/voucher.rb"
+			],
+			[
+				"cannot.",
+				"config/locales/cannot.yml"
+			],
+			[
+				"cannotbilltest",
+				"test/unit/cannot_bill_test.rb"
+			],
+			[
+				"cannotbill",
+				"lib/awebook/models/cannot_parts/cannot_bill_part.rb"
+			],
+			[
+				"cannot_helper",
+				"test/test_helper/cannot_helper.rb"
+			],
+			[
+				"cannoteventpart",
+				"lib/awebook/models/cannot_parts/cannot_event_part.rb"
+			],
+			[
+				"cannoteventtest",
+				"test/unit/cannot_event_test.rb"
+			],
+			[
+				"cannotelement",
+				"lib/awebook/models/cannot_parts/cannot_element_part.rb"
+			],
+			[
+				"cannotem",
+				"lib/awebook/models/cannot_parts/cannot_element_part.rb"
+			],
+			[
+				"cannotelementtest",
+				"test/unit/cannot_element_test.rb"
+			],
+			[
+				"cannotel",
+				"lib/awebook/models/cannot_parts/cannot_element_part.rb"
+			],
+			[
+				"cannotevent",
+				"lib/awebook/models/cannot_parts/cannot_event_part.rb"
+			],
+			[
+				"cannot",
+				"lib/awebook/models/cannot_parts/cannot_base_part.rb"
+			],
+			[
+				"inventory_transfer",
+				"test/factories/inventory_transfer.rb"
+			],
+			[
+				"sheet",
+				"test/factories/sheet.rb"
+			],
+			[
+				"cannottest",
+				"test/unit/cannot_test.rb"
+			],
+			[
+				"company.",
+				"app/models/company.rb"
+			],
+			[
+				"accounting_subject",
+				"app/models/accounting_subject.rb"
+			],
+			[
+				"vouchernew",
+				"app/views/vouchers/new.haml"
+			],
+			[
+				"cannel",
+				"lib/awebook/models/cannot_parts/cannot_element_part.rb"
+			],
+			[
+				"cannotest",
+				"test/unit/cannot_test.rb"
+			],
+			[
+				"voucheshow",
+				"app/views/vouchers/show.haml"
+			],
+			[
+				"sales",
+				"app/controllers/bills/sales_controller.rb"
+			],
+			[
+				"billfo",
+				"app/views/bills/_form.haml"
+			],
+			[
+				"bill_sheet_part.rb",
+				"lib/awebook/models/bill_parts/bill_sheet_part.rb"
+			],
+			[
+				"err",
+				"lib/awebook/errors.rb"
+			],
+			[
+				"show.haml",
+				"app/views/bills/show.haml"
+			],
+			[
+				"cus",
+				"app/models/customer.rb"
+			],
+			[
+				"app/helpers/application_helper/toolbar_helper.rb",
+				"app/helpers/application_helper/toolbar_helper.rb"
+			],
+			[
+				"billshow",
+				"app/views/bills/show.haml"
+			],
+			[
+				"errors",
+				"config/locales/errors.yml"
+			],
+			[
+				"error",
+				"lib/awebook/errors.rb"
+			],
+			[
+				"bill",
+				"app/models/bill.rb"
+			],
+			[
+				"cannot.yml",
+				"config/locales/cannot.yml"
+			],
+			[
+				"cannot.y",
+				"config/locales/cannot.yml"
+			],
+			[
+				"void",
+				"lib/awebook/models/event_parts/event_void_part.rb"
+			],
+			[
+				"cannotbasepart",
+				"lib/awebook/models/cannot_parts/cannot_base_part.rb"
+			],
+			[
+				"child",
+				"lib/awebook/models/child_event_part.rb"
+			],
+			[
+				"canno",
+				"lib/awebook/models/cannot_parts/cannot_element_part.rb"
+			],
+			[
+				"elementpart",
+				"lib/awebook/models/element_part.rb"
+			],
+			[
+				"toolbar",
+				"app/helpers/application_helper/toolbar_helper.rb"
+			],
+			[
+				"toolbar_helper",
+				"app/helpers/application_helper/toolbar_helper.rb"
+			],
+			[
+				"cannote",
+				"lib/awebook/models/cannot_parts/cannot_element_part.rb"
+			],
+			[
+				"cannotele",
+				"lib/awebook/models/cannot_parts/cannot_element_part.rb"
+			],
+			[
+				"cannotelementpart",
+				"lib/awebook/models/cannot_parts/cannot_element_part.rb"
+			],
+			[
+				"eventpart",
+				"lib/awebook/models/event_part.rb"
+			],
+			[
+				"datapart",
+				"lib/awebook/models/data_part.rb"
+			],
+			[
+				"element",
+				"lib/awebook/models/element_part.rb"
+			],
+			[
+				"ev",
+				"lib/awebook/models/event_part.rb"
+			],
+			[
+				"cannoteleme",
+				"lib/awebook/models/cannot_parts/cannot_element_part.rb"
+			],
+			[
+				"common_checkings_controller",
+				"app/controllers/checkings/common_checkings_controller.rb"
+			],
+			[
+				"bills/form",
+				"app/views/bills/_form.haml"
+			],
+			[
+				"billnew",
+				"app/views/bills/new.haml"
+			],
+			[
+				"demo",
+				"lib/awebook/demo/base.rb"
+			],
+			[
+				"productshow",
+				"app/views/inventories/products/show.haml"
+			],
+			[
+				"bills/table",
+				"app/views/bills/_table.haml"
+			],
+			[
+				"billlist",
+				"app/views/bills/list.haml"
+			],
+			[
+				"productindex",
+				"app/views/inventories/product_categories/index.haml"
+			],
+			[
+				"product",
+				"app/models/product.rb"
+			],
+			[
+				"produ",
+				"app/models/product_department_account.rb"
+			],
+			[
+				"sale",
+				"app/models/sale.rb"
+			],
+			[
+				"salerefundscontroller",
+				"app/controllers/payments/sale_refunds_controller.rb"
+			],
+			[
+				"permissiongear",
+				"lib/awebook/controllers/permission_gear.rb"
+			],
+			[
+				"applicationcontroller",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"cannotbillpart",
+				"lib/awebook/models/cannot_parts/cannot_bill_part.rb"
+			],
+			[
+				"salereturningrefund",
+				"app/models/sale_returning_refund.rb"
+			],
+			[
+				"salereturning",
+				"app/controllers/bills/sale_returnings_controller.rb"
+			],
+			[
+				"cannotsale",
+				"lib/awebook/models/cannot_parts/cannot_sale_part.rb"
+			],
+			[
+				"collection",
+				"app/models/collection.rb"
+			],
+			[
+				"paying",
+				"app/models/paying.rb"
+			],
+			[
+				"losing",
+				"app/models/losing.rb"
+			],
+			[
+				"overflow",
+				"app/models/overflow.rb"
+			],
+			[
+				"inventorytransfer",
+				"app/models/inventory_transfer.rb"
+			],
+			[
+				"commonchecking",
+				"app/models/common_checking.rb"
+			],
+			[
+				"cansalereturning",
+				"lib/awebook/models/cannot_parts/cannot_sale_returning_part.rb"
+			],
+			[
+				"cannotsalepart",
+				"lib/awebook/models/cannot_parts/cannot_sale_part.rb"
+			],
+			[
+				"purchase",
+				"app/models/purchase.rb"
+			],
+			[
+				"salereturnings",
+				"app/controllers/bills/sale_returnings_controller.rb"
+			],
+			[
+				"saleturn",
+				"app/models/sale_returning.rb"
+			],
+			[
+				"salereturncon",
+				"app/controllers/bills/sale_returnings_controller.rb"
+			],
+			[
+				"event",
+				"lib/awebook/models/event_part.rb"
+			],
+			[
+				"cannotg",
+				"lib/awebook/controllers/cannot_gear.rb"
+			],
+			[
+				"elementcannotpart",
+				"lib/awebook/models/cannot_parts/element_cannot_part.rb"
+			],
+			[
+				"ele",
+				"lib/awebook/models/element_part.rb"
+			],
+			[
+				"awebook/errors.rb",
+				"lib/awebook/errors.rb"
+			],
+			[
+				"evntpart",
+				"lib/awebook/models/event_part.rb"
+			],
+			[
+				"salecon",
+				"app/controllers/bills/sales_controller.rb"
+			],
+			[
+				"billcan",
+				"lib/awebook/models/can_parts/bill_can_part.rb"
+			],
+			[
+				"elementcan",
+				"lib/awebook/models/can_parts/element_can_part.rb"
+			],
+			[
+				"salesco",
+				"app/controllers/bills/sales_controller.rb"
+			],
+			[
+				"canel",
+				"lib/awebook/models/can_parts/element_can_part.rb"
+			],
+			[
+				"canpar",
+				"lib/awebook/models/can_parts/element_can_part.rb"
+			],
+			[
+				"cange",
+				"lib/awebook/controllers/can_gear.rb"
+			],
+			[
+				"canyml",
+				"config/locales/cannot.yml"
+			],
+			[
+				"eventpa",
+				"lib/awebook/models/event_part.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/home/ery/Documents/skywalker/skywalker.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 353.0,
+	"status_bar_visible": true
+}
