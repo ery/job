@@ -53,11 +53,11 @@ namespace :topic do
   end
 
   def create_topic(topic)
-    if Subject.where(url: topic[:url]).exists?
+    if Topic.where(url: topic[:url]).exists?
       return
     end
 
-    Subject.create! topic
+    Topic.create! topic
 
     $create_new_topic_list << topic
   end
@@ -72,7 +72,7 @@ namespace :topic do
 
   def puts_report
     $create_new_topic_list.each do |topic|
-      puts "Subject..........................................."
+      puts "Topic..........................................."
       puts "Title:      #{topic[:title]}"
       puts "URL:        #{topic[:url]}"
       puts "Author:     #{topic[:author]}"
