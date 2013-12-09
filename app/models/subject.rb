@@ -5,10 +5,14 @@ class Subject < ActiveRecord::Base
     CARED   = "cared"
   end
 
-  belongs_to :topic,  :foreign_key => :url, :primary_key => :url
+  belongs_to :topic, :foreign_key => :url, :primary_key => :url
 
   def analyzed_salary
     topic.analyzed_salary
+  end
+
+  def author
+    topic.author
   end
 
   scope :inbox,   -> { where(:status => Status::INBOX) }
