@@ -12,32 +12,4 @@
   </div>
 </div>
 
-<dl class="dl-horizontal">
-  <dt>状态:</dt>
-  <dd><%= draw_subject_status(@subject) %></dd>
-</dl>
-
-<dl class="dl-horizontal">
-  <dt>标题:</dt>
-  <dd><%= @subject.title %></dd>
-</dl>
-
-<dl class="dl-horizontal">
-  <dt>网址:</dt>
-  <dd><%= link_to @subject.url, @subject.url, :target => '_blank' %></dd>
-</dl>
-
-<dl class="dl-horizontal">
-  <dt>自动薪资:</dt>
-  <dd><%= @subject.analyzed_salary %></dd>
-</dl>
-
-<dl class="dl-horizontal">
-  <dt>手动薪资:</dt>
-  <dd><%= @subject.manual_salary %></dd>
-</dl>
-
-<dl class="dl-horizontal">
-  <dt>手动 说明:</dt>
-  <dd><%= @subject.manual_memo %></dd>
-</dl>
+<%= render 'subject', :subject => @subject %>
