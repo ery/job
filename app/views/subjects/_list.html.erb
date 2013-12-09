@@ -3,11 +3,11 @@
   <thead>
     <tr>
       <th style="min-width: 80px;">状态</th>
-      <!-- <th style="min-width: 100px;">作者(自动)</th> -->
+      <th style="min-width: 100px;">作者(自动)</th>
       <th style="min-width: 100px;">薪资(手动)</th>
       <th style="min-width: 80px;">标题</th>
       <th style="min-width: 100px;">薪资(自动)</th>
-      <!-- <th style="min-width: 100px;">说明(手动)</th> -->
+      <th style="min-width: 100px;">说明(手动)</th>
       <th style="min-width: 140px;"></th>
     </tr>
   </thead>
@@ -16,11 +16,11 @@
     <% subjects.each do |subject| %>
     <tr>
       <td><%= link_to draw_subject_status(subject), subject %></td>
-      <!-- <td><%= link_to subject.analyzed_author.to_s, subject.analyzed_author_url, :target => '_blank' %></td> -->
+      <td><%= link_to subject.analyzed_author.to_s, subject.analyzed_author_url, :target => '_blank' %></td>
       <td><%= link_to subject.manual_salary.to_s, subject %></td>
       <td><%= link_to subject.title.to_s, subject.url, :target => '_blank' %></td>
       <td><%= link_to subject.analyzed_salary.to_s, subject %></td>
-      <!-- <td><%= link_to subject.manual_memo.to_s, subject %></td> -->
+      <td><%= link_to subject.manual_memo.to_s, subject %></td>
       <td>
         <div class="btn-group">
           <button type="button" class="btn btn-default"><%= link_to '查看', subject %></button>
