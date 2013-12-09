@@ -16,9 +16,9 @@
     <% subjects.each do |subject| %>
     <tr>
       <td><%= link_to draw_subject_status(subject), subject %></td>
-      <td><%= link_to subject.analyzed_author.to_s, subject.analyzed_author_url, :target => '_blank' %></td>
+      <td><%= link_to subject.analyzed_author.to_s, subject %></td>
       <td><%= link_to subject.manual_salary.to_s, subject %></td>
-      <td><%= link_to subject.title.to_s, subject.url, :target => '_blank' %></td>
+      <td><%= link_to subject.title.to_s, subject %></td>
       <td><%= link_to subject.analyzed_salary.to_s, subject %></td>
       <td><%= link_to subject.manual_memo.to_s, subject %></td>
       <td>
