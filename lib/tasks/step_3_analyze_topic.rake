@@ -11,12 +11,13 @@ end
 
 def analyze_topic(topic)
   topic = Topic.find_by_url!(topic.url)
-  topic.analyzed_salary = analyze_salary(topic)
+  doc = Nokogiri::HTML(open(topic.file))
+  topic.analyzed_salary = analyze_salary(doc)
+  topic.analyzed_author = analyze_author(doc)
   topic.save!
 end
 
-def analyze_salary(topic)
-  doc = Nokogiri::HTML(open(topic.file))
+def analyze_salary(doc)
   description = doc.css('.topic .body').first.content
   description.gsub!("\n", ' ')
 
@@ -28,4 +29,10 @@ def analyze_salary(topic)
   end
 
   return ""
+end
+
+def analyze_author(doc)
+  #<a data-author="true" data-name="isofttalent" href="/isofttalent">isofttalent</a>
+  author = doc.css('.topic .infos .info a')[1].content.to_s
+  return author
 end
