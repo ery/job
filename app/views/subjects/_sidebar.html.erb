@@ -1,6 +1,6 @@
 <ul class="nav bs-sidenav">
   <li><%= link_to title_badge("收件箱", Subject.inbox.count),   inbox_subjects_path %></li>
-  <li><%= link_to title_badge("关注的", Subject.cared.count),   cared_subjects_path %></li>
-  <li><%= link_to title_badge("忽略的", Subject.ignored.count), ignored_subjects_path %></li>
-  <li><%= link_to title_badge("全部的",   Subject.count),         subjects_path %></li>
+  <li><%= link_to title_badge("已关注", Subject.cared.count),   cared_subjects_path %></li>
+  <li><%= link_to title_badge("已忽略", Subject.ignored.count), ignored_subjects_path %></li>
+  <li><%= link_to title_badge("全部",   Subject.count),         subjects_path %></li>
 </ul>
