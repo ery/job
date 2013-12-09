@@ -15,7 +15,15 @@ module ApplicationHelper
     end
   end
 
-  def title_badge(title, badge)
-    "#{title} <span class='badge'>#{badge}</span>".html_safe
+  def sidebar_link_to(title, count, path)
+    content_tag :li, current_page?(path) ? {:class => 'active'} : {} do
+      content_tag :a, :href => path do
+        contents = []
+        contents << title
+        contents << content_tag(:span, count, :class => 'badge pull-right')
+        contents.join.html_safe
+      end
+    end
   end
+
 end
