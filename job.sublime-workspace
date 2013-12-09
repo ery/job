@@ -519,30 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "lib/tasks/topic.analyze.rake",
-			"settings":
-			{
-				"buffer_size": 142,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/models/subject.rb",
-			"settings":
-			{
-				"buffer_size": 304,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "job.sublime-project",
-			"settings":
-			{
-				"buffer_size": 471,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/Ruby/Ruby.sublime-build",
 	"command_palette":
@@ -960,8 +936,33 @@
 	},
 	"file_history":
 	[
-		"/home/ery/Desktop/job/db/topics/2081.html",
+		"/home/ery/Documents/job/app/views/layouts/application.html.erb",
+		"/home/ery/Documents/job/app/views/subjects/cared.html.erb",
+		"/home/ery/Documents/job/app/views/subjects/ignored.html.erb",
+		"/home/ery/Documents/job/app/views/subjects/inbox.html.erb",
+		"/home/ery/Documents/job/app/views/subjects/index.html.erb",
+		"/home/ery/Documents/job/app/views/topics/index.html.erb",
+		"/home/ery/Documents/job/app/views/subjects/_list.html.erb",
+		"/home/ery/Documents/job/app/controllers/subjects_controller.rb",
+		"/home/ery/Documents/job/app/views/subjects/show.html.erb",
+		"/home/ery/Documents/job/app/views/subjects/_form.html.erb",
+		"/home/ery/Documents/job/lib/tasks/step_3_analyze_topic.rake",
+		"/home/ery/Documents/job/db/migrate/20131209170351_create_subjects.rb",
+		"/home/ery/Documents/job/app/controllers/topics_controller.rb",
+		"/home/ery/Documents/job/app/models/subject.rb",
+		"/home/ery/Documents/job/lib/tasks/step_2_create_subject.rake",
+		"/home/ery/Documents/job/lib/tasks/step_1_fetch_topic.rake",
+		"/home/ery/Documents/job/db/migrate/20131207193046_create_topics.rb",
+		"/home/ery/Documents/job/lib/tasks/topic.fetch.rake",
+		"/home/ery/Documents/job/lib/tasks/topic.download.rake",
+		"/home/ery/Documents/job/lib/tasks/topic.1_download.rake",
 		"/home/ery/Documents/ery/todo/tmp.md",
+		"/home/ery/Documents/job/config/routes.rb",
+		"/home/ery/Documents/job/app/helpers/application_helper.rb",
+		"/home/ery/Documents/job/lib/tasks/topic.analyze.rake",
+		"/home/ery/Documents/job/app/controllers/application_controller.rb",
+		"/home/ery/Documents/job/job.sublime-project",
+		"/home/ery/Desktop/job/db/topics/2081.html",
 		"/home/ery/Desktop/job/job.sublime-project",
 		"/home/ery/Desktop/job/lib/tasks/topic.fetch.rake",
 		"/home/ery/Desktop/job/db/migrate/20131209170351_create_subjects.rb",
@@ -1062,32 +1063,7 @@
 		"/home/ery/.rvm/gems/ruby-2.0.0-p247@awebook/gems/devise-2.1.2/test/support/integration.rb",
 		"/home/ery/Documents/awebook/lib/awebook/models/cannot_parts/cannot_base_part.rb",
 		"/home/ery/Desktop/宝雷杭的商业计划书.asc",
-		"/home/ery/Documents/awebook/lib/awebook/models/cannot_parts/cannot_bill_part.rb",
-		"/home/ery/Documents/awebook/lib/awebook/models/cannot_parts/cannot_element_part.rb",
-		"/home/ery/Documents/awebook/lib/awebook/models/cannot_parts/cannot_event_part.rb",
-		"/home/ery/Documents/awebook/test/unit/cannot_element_test.rb",
-		"/home/ery/Documents/awebook/test/unit/cannot_bill_test.rb",
-		"/home/ery/Documents/awebook/config/locales/cannot.yml",
-		"/home/ery/Documents/awebook/test/test_helper/cannot_helper.rb",
-		"/home/ery/Documents/awebook/test/unit/cannot_event_test.rb",
-		"/home/ery/Desktop/cannot/cannot_test/unit_test_16.rb",
-		"/home/ery/Desktop/cannot/cannot_test/unit_test_15.rb",
-		"/home/ery/Desktop/cannot/cannot_test/unit_test_14.rb",
-		"/home/ery/Desktop/cannot/cannot_test/unit_test_11.rb",
-		"/home/ery/Desktop/cannot/cannot_test/unit_test_10.rb",
-		"/home/ery/Desktop/cannot/cannot_test/unit_test_09.rb",
-		"/home/ery/Desktop/cannot/cannot_test/unit_test_12.rb",
-		"/home/ery/Desktop/cannot/cannot_test/unit_test_13.rb",
-		"/home/ery/Desktop/cannot/cannot_test/unit_test_01.rb",
-		"/home/ery/Desktop/cannot/cannot_test/unit_test_9.rb",
-		"/home/ery/Desktop/cannot/cannot_test/unit_test_7.rb",
-		"/home/ery/Desktop/cannot/cannot_test/unit_test_6.rb",
-		"/home/ery/Desktop/cannot/cannot_test/unit_test_8.rb",
-		"/home/ery/data/ery/Soft/Windows/other/load/cf1/Hotn0814/data/biaoqian@sex8性吧最新地址.mht",
-		"/home/ery/Documents/awebook/test/test_helper.rb",
-		"/home/ery/Desktop/0001-No-message..patch",
-		"/home/ery/Desktop/cannot/cannot_test/unit_test_5.rb",
-		"/home/ery/Desktop/cannot/cannot_test/unit_test_4.rb"
+		"/home/ery/Documents/awebook/lib/awebook/models/cannot_parts/cannot_bill_part.rb"
 	],
 	"find":
 	{
@@ -1095,9 +1071,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 102.0,
 		"where_history":
 		[
+			"",
 			"-*.html",
 			"",
 			"*.yml",
@@ -1224,8 +1201,7 @@
 			"",
 			"/home/ery/Documents/awebook/test/integration",
 			"",
-			"/home/ery/Documents/awebook/app",
-			"/home/ery/Documents/awebook"
+			"/home/ery/Documents/awebook/app"
 		]
 	},
 	"find_state":
@@ -1233,6 +1209,51 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"帖子",
+			"Topic",
+			"button",
+			"原网址",
+			"打开",
+			"URL",
+			"薪水",
+			"薪资",
+			"redirect_to",
+			"back",
+			":target => '_blank'",
+			"pry",
+			"salary",
+			"key",
+			"analyzed_salary",
+			"employee_id",
+			"2",
+			"3",
+			"build",
+			"Topic",
+			"_",
+			"create",
+			" =>",
+			"Create",
+			"step_3_create_subject",
+			"_",
+			"auto_salary",
+			"exsit?",
+			"annual_salary",
+			"delete",
+			"sub",
+			"topic_description",
+			"subject",
+			"created_new_topics",
+			"download_new_topics",
+			"topic_list",
+			"create_new_topic_list",
+			"topics",
+			"local_file",
+			"puts",
+			"Topic",
+			"RubyChina",
+			"topic",
+			"draw_subject_status",
+			"draw_topic_status",
 			"bundle",
 			"vendor",
 			"awebook",
@@ -1315,52 +1336,7 @@
 			"Topic",
 			"topic_list",
 			"job",
-			"fetch_topic_from_page",
-			"fetch_job_from_page",
-			"job_list",
-			"job",
-			"save_job",
-			"topic_url",
-			"topic_title",
-			"topic_",
-			"job",
-			"binding.pry",
-			"pry",
-			"return",
-			"  ",
-			"job_list",
-			"url",
-			"job",
-			"development",
-			"~/\n",
-			"restart",
-			"1",
-			"index",
-			"page_count",
-			"page_url",
-			"puts_job",
-			"author_url",
-			"title",
-			"binding",
-			"line",
-			"button",
-			"Destroy",
-			"Edit",
-			"Care",
-			"Inbox",
-			"render",
-			"layout",
-			"topics",
-			"http://www.baidu.com",
-			"remote",
-			"def draw_topic_status",
-			"<span class=\"",
-			"content_tag",
-			"<dd>",
-			"<%",
-			"></",
-			"button",
-			"topics"
+			"fetch_topic_from_page"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1368,6 +1344,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"原招聘贴",
 			"Subject",
 			"subjects",
 			"Subject",
@@ -1494,8 +1471,7 @@
 			"Searching 696 files for \"event_increament_unit\"\nevent_increament_unit_cost",
 			"get_sheet_unit_cost",
 			"department_accounts",
-			"ProductDepartmentAccount",
-			"product_department_account"
+			"ProductDepartmentAccount"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1506,89 +1482,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "lib/tasks/topic.analyze.rake",
-					"settings":
-					{
-						"buffer_size": 142,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								122,
-								122
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/models/subject.rb",
-					"settings":
-					{
-						"buffer_size": 304,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								304,
-								304
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "job.sublime-project",
-					"settings":
-					{
-						"buffer_size": 471,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								103,
-								103
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1650,20 +1545,80 @@
 		"selected_items":
 		[
 			[
-				"20",
-				"db/topics/2081.html"
+				"app",
+				"app/views/layouts/application.html.erb"
 			],
 			[
-				"subject",
-				"app/models/subject.rb"
+				"list",
+				"app/views/subjects/_list.html.erb"
+			],
+			[
+				"ca",
+				"app/views/subjects/cared.html.erb"
+			],
+			[
+				"subs",
+				"app/controllers/subjects_controller.rb"
+			],
+			[
+				"show",
+				"app/views/subjects/show.html.erb"
+			],
+			[
+				"20",
+				"db/migrate/20131209170351_create_subjects.rb"
 			],
 			[
 				"sub",
-				"db/migrate/20131205170351_create_subjects.rb"
+				"app/controllers/subjects_controller.rb"
+			],
+			[
+				"form",
+				"app/views/subjects/_form.html.erb"
+			],
+			[
+				"sjw",
+				"app/views/subjects/show.html.erb"
+			],
+			[
+				"rake",
+				"lib/tasks/step_3_analyze_topic.rake"
+			],
+			[
+				"20su",
+				"db/migrate/20131209170351_create_subjects.rb"
+			],
+			[
+				"topicin",
+				"app/views/topics/index.html.erb"
+			],
+			[
+				"fech",
+				"lib/tasks/topic.fetch.rake"
+			],
+			[
+				"an",
+				"lib/tasks/topic.analyze.rake"
+			],
+			[
+				"topicht",
+				"app/views/topics/index.html.erb"
 			],
 			[
 				"apphtml",
 				"app/views/layouts/application.html.erb"
+			],
+			[
+				"ro",
+				"config/routes.rb"
+			],
+			[
+				"subjects_controller",
+				"app/controllers/subjects_controller.rb"
+			],
+			[
+				"subject",
+				"app/models/subject.rb"
 			],
 			[
 				"rout",
@@ -1680,10 +1635,6 @@
 			[
 				"apphtmlerb",
 				"app/views/layouts/application.html.erb"
-			],
-			[
-				"list",
-				"app/views/topics/_list.html.erb"
 			],
 			[
 				"action_header",
@@ -1730,24 +1681,12 @@
 				"app/assets/stylesheets/application.css"
 			],
 			[
-				"app",
-				"app/views/layouts/application.html.erb"
-			],
-			[
 				"apph",
 				"app/helpers/application_helper.rb"
 			],
 			[
 				"topic",
 				"app/models/topic.rb"
-			],
-			[
-				"form",
-				"app/views/topics/_form.html.erb"
-			],
-			[
-				"show",
-				"app/views/topics/show.html.erb"
 			],
 			[
 				"all",
@@ -2116,50 +2055,6 @@
 			[
 				"ele",
 				"lib/awebook/models/element_part.rb"
-			],
-			[
-				"awebook/errors.rb",
-				"lib/awebook/errors.rb"
-			],
-			[
-				"evntpart",
-				"lib/awebook/models/event_part.rb"
-			],
-			[
-				"salecon",
-				"app/controllers/bills/sales_controller.rb"
-			],
-			[
-				"billcan",
-				"lib/awebook/models/can_parts/bill_can_part.rb"
-			],
-			[
-				"elementcan",
-				"lib/awebook/models/can_parts/element_can_part.rb"
-			],
-			[
-				"salesco",
-				"app/controllers/bills/sales_controller.rb"
-			],
-			[
-				"canel",
-				"lib/awebook/models/can_parts/element_can_part.rb"
-			],
-			[
-				"canpar",
-				"lib/awebook/models/can_parts/element_can_part.rb"
-			],
-			[
-				"cange",
-				"lib/awebook/controllers/can_gear.rb"
-			],
-			[
-				"canyml",
-				"config/locales/cannot.yml"
-			],
-			[
-				"eventpa",
-				"lib/awebook/models/event_part.rb"
 			]
 		],
 		"width": 0.0
@@ -2179,7 +2074,7 @@
 	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 353.0,
 	"status_bar_visible": true
 }
