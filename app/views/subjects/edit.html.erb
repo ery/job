@@ -1,5 +1,25 @@
 <%= draw_action_header %>
 
+<dl class="dl-horizontal">
+  <dt>状态:</dt>
+  <dd><%= draw_subject_status(@subject) %></dd>
+</dl>
+
+<dl class="dl-horizontal">
+  <dt>标题:</dt>
+  <dd><%= @subject.title %></dd>
+</dl>
+
+<dl class="dl-horizontal">
+  <dt>网址:</dt>
+  <dd><%= link_to @subject.url, @subject.url, :target => '_blank' %></dd>
+</dl>
+
+<dl class="dl-horizontal">
+  <dt>自动薪资:</dt>
+  <dd><%= @subject.analyzed_salary %></dd>
+</dl>
+
 <%= form_for(@subject, :html => {:role => "form"}) do |f| %>
 
 <%= render 'form', :subject => @subject, :form => f %>
