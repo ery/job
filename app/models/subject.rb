@@ -15,6 +15,10 @@ class Subject < ActiveRecord::Base
     topic.analyzed_author
   end
 
+  def analyzed_author_url
+    "http://ruby-china.org/#{analyzed_author}"
+  end
+
   scope :inbox,   -> { where(:status => Status::INBOX) }
   scope :ignored, -> { where(:status => Status::IGNORED) }
   scope :cared,   -> { where(:status => Status::CARED) }

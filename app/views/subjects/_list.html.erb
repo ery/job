@@ -20,7 +20,7 @@
       <td><%= link_to subject.analyzed_salary.to_s, subject %></td>
       <td><%= link_to subject.manual_salary.to_s, subject %></td>
       <td><%= link_to subject.manual_memo.to_s, subject %></td>
-      <td><%= link_to subject.analyzed_author.to_s, subject %></td>
+      <td><%= link_to subject.analyzed_author.to_s, subject.analyzed_author_url, :target => '_blank' %></td>
       <td>
         <div class="btn-group">
           <button type="button" class="btn btn-default"><%= link_to '查看', subject %></button>
