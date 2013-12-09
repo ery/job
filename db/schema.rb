@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 20131209170352) do
     t.string   "analyzed_salary"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "author"
+    t.string   "analyzed_author"
   end
 
 end
