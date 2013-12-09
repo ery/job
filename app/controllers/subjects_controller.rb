@@ -11,6 +11,7 @@ class SubjectsController < ApplicationController
 
   def cared
     @subjects = Subject.cared
+    @subjects = @subjects.sort { |x,y| y.manual_salary.to_s <=> x.manual_salary.to_s }
   end
 
   def index
