@@ -11,7 +11,7 @@ class SubjectsController < ApplicationController
 
   def cared
     @subjects = Subject.cared
-    @subjects = @subjects.sort { |x,y| y.manual_salary.to_s <=> x.manual_salary.to_s }
+    @subjects = Subject.sort_by_field(@subjects, :analyzed_author)
   end
 
   def index
