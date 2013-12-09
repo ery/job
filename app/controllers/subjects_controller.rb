@@ -6,12 +6,11 @@ class SubjectsController < ApplicationController
   end
 
   def ignored
-    @subjects = Subject.ignored
+    @subjects = Subject.sort_by_field(Subject.ignored, :manual_salary, false)
   end
 
   def cared
-    @subjects = Subject.cared
-    @subjects = Subject.sort_by_field(@subjects, :manual_salary, false)
+    @subjects = Subject.sort_by_field(Subject.cared, :manual_salary, false)
   end
 
   def index

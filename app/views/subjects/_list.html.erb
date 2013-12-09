@@ -8,7 +8,7 @@
       <th style="min-width: 80px;">标题</th>
       <th style="min-width: 100px;">薪资(自动)</th>
       <th style="min-width: 100px;">说明(手动)</th>
-      <th style="min-width: 140px;"></th>
+      <th style="min-width: 100px;"></th>
     </tr>
   </thead>
 
@@ -23,7 +23,6 @@
       <td><%= link_to subject.manual_memo.to_s, subject %></td>
       <td>
         <div class="btn-group">
-          <button type="button" class="btn btn-default"><%= link_to '查看', subject %></button>
           <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
             操作<span class="caret"></span>
           </button>
