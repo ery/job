@@ -519,6 +519,16 @@
 	},
 	"buffers":
 	[
+		{
+			"contents": "Searching 82 files for \"dede\" (case sensitive)\n\n/home/ery/Documents/job/vendor/assets/stylesheets/bootstrap.css:\n 1777  .table > tbody > .danger > th,\n 1778  .table > tfoot > .danger > th {\n 1779:   background-color: #f2dede;\n 1780  }\n 1781  \n ....\n 2132  .has-error .input-group-addon {\n 2133    color: #a94442;\n 2134:   background-color: #f2dede;\n 2135    border-color: #a94442;\n 2136  }\n ....\n 5376  .alert-danger {\n 5377    color: #a94442;\n 5378:   background-color: #f2dede;\n 5379    border-color: #ebccd1;\n 5380  }\n ....\n 5850  .panel-danger > .panel-heading {\n 5851    color: #a94442;\n 5852:   background-color: #f2dede;\n 5853    border-color: #ebccd1;\n 5854  }\n\n4 matches in 1 file\n",
+			"settings":
+			{
+				"buffer_size": 690,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		}
 	],
 	"build_system": "Packages/Ruby/Ruby.sublime-build",
 	"command_palette":
@@ -936,6 +946,7 @@
 	},
 	"file_history":
 	[
+		"/home/ery/Documents/job/.gitignore",
 		"/home/ery/Documents/job/app/views/layouts/application.html.erb",
 		"/home/ery/Documents/job/app/views/subjects/cared.html.erb",
 		"/home/ery/Documents/job/app/views/subjects/ignored.html.erb",
@@ -1008,7 +1019,6 @@
 		"/home/ery/Desktop/job/app/views/topics/new.html.erb",
 		"/home/ery/Desktop/job/app/views/rubychina_topics/_siderbart.html.erb",
 		"/home/ery/Desktop/job/app/views/topics/_list.html.erb",
-		"/home/ery/Documents/job/.gitignore",
 		"/home/ery/Desktop/job/db/seeds.rb",
 		"/home/ery/Documents/ery/scripts/sources/suitup-development.sh",
 		"/home/ery/Desktop/job/Gemfile",
@@ -1209,6 +1219,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"dede",
 			"帖子",
 			"Topic",
 			"button",
@@ -1335,8 +1346,7 @@
 			"new_topic_list",
 			"Topic",
 			"topic_list",
-			"job",
-			"fetch_topic_from_page"
+			"job"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1482,8 +1492,65 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"settings":
+					{
+						"buffer_size": 690,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										220,
+										224
+									],
+									[
+										343,
+										347
+									],
+									[
+										474,
+										478
+									],
+									[
+										622,
+										626
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
