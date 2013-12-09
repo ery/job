@@ -11,8 +11,8 @@ class Subject < ActiveRecord::Base
     topic.analyzed_salary
   end
 
-  def author
-    topic.author
+  def analyzed_author
+    topic.analyzed_author
   end
 
   scope :inbox,   -> { where(:status => Status::INBOX) }
