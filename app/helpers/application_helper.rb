@@ -34,28 +34,4 @@ module ApplicationHelper
     end
   end
 
-  # def sidebar_link_to(title, style, count, path)
-  #   content_tag :li, current_page?(path) ? {:class => "active"} : {} do
-  #     content_tag :a, :href => path do
-  #       contents = []
-  #       #contents << content_tag(:span, title, :class => "text-#{style}")
-  #       #contents << content_tag(:span, count, :class => "badge pull-right")
-
-  #       contents << content_tag(:div, title, :class => "alert alert-#{style}")
-
-  #       #contents << title
-  #       #contents << content_tag(:span, title, :class => "label label_#{status_class} ")
-  #       #contents << content_tag(:strong, count, :class => "label label_#{status_class} large pull-right")
-  #       #contents << content_tag(:p, count, :class => "text-#{status_class} pull-right")
-  #       contents.join.html_safe
-  #     end
-  #   end
-  # end
-
-  # def sidebar_link_to(title, style, count, path)
-  #   content_tag :div, :class => "alert alert-#{style}" do
-  #     content_tag :a, title, :href => path
-  #   end
-  # end
-
 end
