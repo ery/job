@@ -1,6 +1,10 @@
 <ul class="nav nav-pills nav-stacked">
-  <%= sidebar_link_to '收件箱', 'danger',  Topic.inbox.count,   topics_path %>
-  <%= sidebar_link_to '已关注', 'warning', Topic.cared.count,   cared_topics_path %>
-  <%= sidebar_link_to '已忽略', 'info',    Topic.ignored.count, ignored_topics_path %>
-  <%= sidebar_link_to '全部的', 'default', Topic.count,         all_topics_path %>
+  <%= sidebar_link_to '收件箱', topics_path,         Topic.inbox.count %>
+  <%= sidebar_link_to '已关注', cared_topics_path,   Topic.cared.count %>
+  <%= sidebar_link_to '已忽略', ignored_topics_path, Topic.ignored.count %>
+  <%= sidebar_link_to '全部的', all_topics_path,     Topic.count %>
+</ul>
+
+<ul class="nav nav-pills nav-stacked">
+  <%= sidebar_link_to '标签', topics_path %>
 </ul>

@@ -23,12 +23,14 @@ module ApplicationHelper
     end
   end
 
-  def sidebar_link_to(title, style, count, path)
+  def sidebar_link_to(title, path, count = 0)
     content_tag :li, current_page?(path) ? {:class => "active"} : {} do
       content_tag :a, :href => path do
         contents = []
         contents << title
-        contents << content_tag(:span, count, :class => "badge pull-right")
+        if count > 0
+          contents << content_tag(:span, count, :class => "badge pull-right")
+        end
         contents.join.html_safe
       end
     end
