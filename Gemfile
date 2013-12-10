@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://ruby.taobao.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
@@ -35,7 +35,13 @@ end
 
 gem "nokogiri", "~> 1.6.0"
 
-gem "pry", "~> 0.9.12.4"
+group :development, :test do
+  gem 'pry',                    '0.9.12'
+  gem 'pry-nav',                '0.2.2'
+  gem 'pry-stack_explorer',     '0.4.9'
+  gem 'pry-rails',              '0.2.2'
+  gem 'zeus',                   '0.13.3'
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
