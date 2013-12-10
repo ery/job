@@ -6,11 +6,11 @@ class TopicsController < ApplicationController
   end
 
   def ignored
-    @topics = Topic.sort_by_field(Topic.ignored, :manual_salary, false)
+    @topics = Topic.ignored.order(:manual_salary)
   end
 
   def cared
-    @topics = Topic.sort_by_field(Topic.cared, :manual_salary, false)
+    @topics = Topic.cared.order(:manual_salary)
   end
 
   def index
