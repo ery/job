@@ -9,5 +9,7 @@ Job::Application.routes.draw do
     get :cared,   :on => :collection
   end
 
+  resources :tags
+
   root 'topics#index'
 end

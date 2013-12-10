@@ -1,0 +1,16 @@
+<%= draw_action_header "标签" %>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>名称</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @tags.each do |tag| %>
+    <tr>
+      <td><%= link_to tag.name, tag %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
