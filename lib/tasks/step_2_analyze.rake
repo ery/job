@@ -47,14 +47,37 @@ def analyze_release_at(doc)
 end
 
 def analyze_company(topic)
-  company = analyze_company_m1(topic)
+  company = nil
+  company ||= analyze_company_m1(topic)
+  company ||= analyze_company_m2(topic)
+
+  puts "......................"
+  puts "company: #{company}"
+  puts "title: #{topic.title}"
   return company
 end
 
 def analyze_company_m1(topic)
-  #[北京]北京圣天博科技有限公司--招 2 枚--rails 工程师
+  #[北京]北京圣天博科技有限公司招 rails 工程师
+  #...公司
 
-  company = /\[北京\].{1,50}/.match(topic.title)
+  %w(公司 团队).each do |keyword|
+    result = /\[.*\](.{1,50}#{keyword})/.match(topic.title)
+    return result[1] if result
+  end
+  return nil
+end
+
+def analyze_company_m2(topic)
+  #[北京]北京圣天博科技 招聘 rails 工程师
+  #...招聘
+  #...诚聘
+
+  %w(招募 招聘 诚聘 寻找 招 聘 寻).each do |keyword|
+    result = /\[.*\](.{1,50})#{keyword}/.match(topic.title)
+    return result[1] if result
+  end
+  return nil
 end
 
 def get_doc_description(doc)
