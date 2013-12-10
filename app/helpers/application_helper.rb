@@ -4,6 +4,12 @@ module ApplicationHelper
     render 'layouts/action_header', :header => header
   end
 
+  def draw_button_to(title, url, options = {})
+    content_tag :button, :class => "btn btn-default" do
+      link_to title, url, options
+    end
+  end
+
   def draw_topic_status(topic)
     case topic.status
     when Topic::Status::INBOX

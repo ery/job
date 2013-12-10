@@ -30,9 +30,9 @@
             <li><%= link_to '查看', topic %></li>
             <li><%= link_to '编辑', edit_topic_path(topic) %></li>
             <li><%= link_to '原招聘贴', topic.url, :target => "_blank" %></li>
-            <li><%= link_to '收件箱', putinbox_topic_path(topic), method: :put %></li>
-            <li><%= link_to '忽略', ignore_topic_path(topic), method: :put %></li>
-            <li><%= link_to '关注', care_topic_path(topic), method: :put %></li>
+            <li><%= link_to '收件箱', inbox_topic_path(topic), method: :put %></li>
+            <li><%= link_to '忽略', ignored_topic_path(topic), method: :put %></li>
+            <li><%= link_to '关注', cared_topic_path(topic), method: :put %></li>
           </ul>
         </div>
       </td>

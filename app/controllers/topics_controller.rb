@@ -1,5 +1,5 @@
 class TopicsController < ApplicationController
-  before_action :set_topic, only: [:show, :edit, :update, :ignore, :care, :putinbox]
+  before_action :set_topic, only: [:show, :edit, :update, :put_ignored, :put_cared, :put_inbox]
 
   def inbox
     @topics = Topic.inbox
@@ -17,19 +17,19 @@ class TopicsController < ApplicationController
     @topics = Topic.all
   end
 
-  def putinbox
+  def put_inbox
     @topic.status = Topic::Status::INBOX
     @topic.save!
     redirect_to :back
   end
 
-  def ignore
+  def put_ignored
     @topic.status = Topic::Status::IGNORED
     @topic.save!
     redirect_to :back
   end
 
-  def care
+  def put_cared
     @topic.status = Topic::Status::CARED
     @topic.save!
     redirect_to :back

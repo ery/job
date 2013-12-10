@@ -4,11 +4,11 @@
 
 <div class="well">
   <div class="btn-group">
-    <button type="button" class="btn btn-default"><%= link_to '原招聘贴', @topic.url, :target => "_blank" %></button>
-    <button type="button" class="btn btn-default"><%= link_to '编辑', edit_topic_path(@topic) %></button>
-    <button type="button" class="btn btn-default"><%= link_to '收件箱', putinbox_topic_path(@topic), method: :put %></button>
-    <button type="button" class="btn btn-default"><%= link_to '忽略', ignore_topic_path(@topic), method: :put %></button>
-    <button type="button" class="btn btn-default"><%= link_to '关注', care_topic_path(@topic), method: :put %></button>
+    <%= draw_button_to '原招聘贴', @topic.url, :target => "_blank" %>
+    <%= draw_button_to '编辑', edit_topic_path(@topic) %>
+    <%= draw_button_to '收件箱', inbox_topic_path(@topic), method: :put %>
+    <%= draw_button_to '忽略', ignored_topic_path(@topic), method: :put %>
+    <%= draw_button_to '关注', cared_topic_path(@topic), method: :put %>
   </div>
 </div>
 
