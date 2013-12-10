@@ -1,6 +1,7 @@
 
 task :go_3 => :environment do
   Topic.all.each do |topic|
+    puts "."
     tag = get_status_tag(topic)
     TopicTag.create! :topic_id => topic.id, :tag_id => tag.id
   end

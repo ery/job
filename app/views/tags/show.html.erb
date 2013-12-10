@@ -6,3 +6,5 @@
     <%= draw_button_to '删除', tag_path(@tag), :method => :delete %>
   </div>
 </div>
+
+<%= render './topics/list', :topics => @tag.topics %>
