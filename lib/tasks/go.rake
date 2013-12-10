@@ -1,4 +1,20 @@
 
+task :go_3 => :environment do
+  Topic.all.each do |topic|
+    tag = get_status_tag(topic)
+    TopicTag.create! :topic_id => topic.id, :tag_id => tag.id
+  end
+end
+
+def get_status_tag(topic)
+  status = topic.status
+  tag = Tag.find_by_name(status)
+  unless tag
+    tag = Tag.create!(:name => status)
+  end
+  return tag
+end
+
 task :go_2 => :environment do
   Topic.all.each do |topic|
     puts "title: #{topic.title}"
