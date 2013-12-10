@@ -34,16 +34,14 @@ end
 
 def analyze_author(doc)
   #<a data-author="true" data-name="isofttalent" href="/isofttalent">isofttalent</a>
-  author = doc.css('.topic .infos .info a')[1].content.to_s
+  element = doc.css('.topic .infos .info a')[1]
+  author = element.content.to_s
   return author
 end
 
 def analyze_release_at(doc)
   #<abbr class="timeago" title="2013-12-01T11:52:51+08:00">9天前</abbr>发布
-  element = doc.css('.topic .infos .info abbr.timeago')[1]
-  if element == nil
-    binding.pry
-  end
+  element = doc.css('.topic .infos .info abbr.timeago').first
   release_at = element[:title].to_s
   return release_at
 end
