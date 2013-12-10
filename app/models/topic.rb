@@ -7,7 +7,7 @@ class Topic < ActiveRecord::Base
   end
 
   #default_scope   -> { order('manual_salary DESC') }
-  default_scope   -> { order('analyzed_release_at DESC') }
+  default_scope   -> { order('manual_salary DESC, analyzed_release_at DESC') }
   scope :inbox,   -> { where(:status => Status::INBOX) }
   scope :ignored, -> { where(:status => Status::IGNORED) }
   scope :cared,   -> { where(:status => Status::CARED) }
