@@ -10,19 +10,8 @@
   <header class="navbar navbar-inverse bs-docs-nav" role="banner">
     <div class="container">
       <div class="navbar-header">
-        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="../" class="navbar-brand">Job</a>
+        <%= link_to "JOB", inbox_topics_path, :class => 'navbar-brand' %>
       </div>
-      <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-        <ul class="nav navbar-nav">
-          <li><%= link_to "我的帖子", inbox_topics_path %></li>
-        </ul>
-      </nav>
     </div>
   </header>
 
