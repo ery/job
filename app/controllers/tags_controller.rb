@@ -15,7 +15,7 @@ class TagsController < ApplicationController
   def create
     @tag = Tag.new(tag_params)
     if @tag.save
-      redirect_to @tag, notice: '新建成功.'
+      redirect_to @tag, notice: '新建成功'
     else
       render action: 'new'
     end
@@ -28,7 +28,7 @@ class TagsController < ApplicationController
   def update
     @tag = Tag.find(params[:id])
     if @tag.update(tag_params)
-      redirect_to @tag, notice: '修改成功.'
+      redirect_to @tag, notice: '修改成功'
     else
       render action: 'edit'
     end
@@ -37,9 +37,9 @@ class TagsController < ApplicationController
   def destroy
     @tag = Tag.find(params[:id])
     if @tag.destroy
-      redirect_to tags_path, notice: '删除成功.'
+      redirect_to tags_path, notice: '删除成功'
     else
-      redirect_to tag_path(@tag), notice: '删除失败.'
+      redirect_to tag_path(@tag), notice: '删除失败'
     end
   end
 
