@@ -37,4 +37,23 @@ class Topic < ActiveRecord::Base
     end
   end
 
+  def self.tags_list
+    list = []
+    Tag.all.each do |tag|
+      list << [tag.name, tag.id]
+    end
+    return list
+  end
+
+  def tag_ids
+    ids = []
+    self.tags.each do |tag|
+      ids << tag.id
+    end
+    return ids
+  end
+
+  def tag_ids=(ids)
+  end
+
 end
