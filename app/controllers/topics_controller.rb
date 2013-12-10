@@ -6,11 +6,12 @@ class TopicsController < ApplicationController
   end
 
   def ignored
-    @topics = Topic.ignored.order(:manual_salary)
+    binding.pry
+    @topics = Topic.ignored.order("manual_salary DESC")
   end
 
   def cared
-    @topics = Topic.cared.order(:manual_salary)
+    @topics = Topic.cared.order("manual_salary DESC")
   end
 
   def index
