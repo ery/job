@@ -7,6 +7,7 @@ class Topic < ActiveRecord::Base
   end
   has_many :topic_tags
   has_many :tags, :through => :topic_tags
+  attr_accessor :tag_ids
   default_scope   -> { order('manual_salary DESC, analyzed_release_at DESC') }
   scope :inbox,   -> { where(:status => Status::INBOX) }
   scope :ignored, -> { where(:status => Status::IGNORED) }
@@ -54,6 +55,23 @@ class Topic < ActiveRecord::Base
   end
 
   def tag_ids=(ids)
+    @tag_ids = ids
+  end
+
+  after_save :update_tags
+
+  def update_tags
+    return unless @tag_ids
+
+    self.topic_tags.each do |topic_tag|
+      topic_tag.destroy!
+    end
+
+    @tag_ids.each do |tag_id|
+      unless tag_id.blank?
+        TopicTag.create! :topic_id => self.id, :tag_id => tag_id
+      end
+    end
   end
 
 end
