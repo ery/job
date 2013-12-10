@@ -1,4 +1,4 @@
-<%= draw_action_header "标签 #{@tag.name}" %>
+<%= draw_action_header "标签 #{@tag.name} #{@tag.topic_tags.count} Topics" %>
 
 <div class="well">
   <div class="btn-group">
@@ -7,4 +7,3 @@
   </div>
 </div>
 
-<%= render './topics/list', :topics => @tag.topics %>
