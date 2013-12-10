@@ -14,6 +14,7 @@ def analyze_topic(topic)
   doc = Nokogiri::HTML(open(topic.file))
   topic.analyzed_salary = analyze_salary(doc)
   topic.analyzed_author = analyze_author(doc)
+  topic.analyzed_release_at = analyze_release_at(doc)
   topic.save!
 end
 
@@ -36,3 +37,7 @@ def analyze_author(doc)
   author = doc.css('.topic .infos .info a')[1].content.to_s
   return author
 end
+
+def analyze_release_at(doc)
+end
+
