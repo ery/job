@@ -1,19 +1,19 @@
 class TopicsController < ApplicationController
   before_action :set_topic, only: [:show, :edit, :update, :put_ignored, :put_cared, :put_inbox]
 
-  def inbox
+  def index
     @topics = Topic.inbox
   end
 
   def ignored
-    @topics = Topic.ignored.order("manual_salary DESC")
+    @topics = Topic.ignored
   end
 
   def cared
-    @topics = Topic.cared.order("manual_salary DESC")
+    @topics = Topic.cared
   end
 
-  def index
+  def all
     @topics = Topic.all
   end
 

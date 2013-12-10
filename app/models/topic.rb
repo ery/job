@@ -6,6 +6,7 @@ class Topic < ActiveRecord::Base
     NONE    = "none"
   end
 
+  default_scope   -> { order('manual_salary DESC') }
   scope :inbox,   -> { where(:status => Status::INBOX) }
   scope :ignored, -> { where(:status => Status::IGNORED) }
   scope :cared,   -> { where(:status => Status::CARED) }

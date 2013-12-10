@@ -1,6 +1,6 @@
 <ul class="nav nav-pills nav-stacked">
-  <%= sidebar_link_to "收件箱", Topic.inbox.count, inbox_topics_path %>
-  <%= sidebar_link_to "已关注", Topic.cared.count, cared_topics_path %>
-  <%= sidebar_link_to "已忽略", Topic.ignored.count, ignored_topics_path %>
-  <%= sidebar_link_to "全部", Topic.count, topics_path %>
+  <%= sidebar_link_to 'label-danger',  '收件箱', Topic.inbox.count, topics_path %>
+  <%= sidebar_link_to 'label-warning', '已关注', Topic.cared.count, cared_topics_path %>
+  <%= sidebar_link_to 'label-info',    '已忽略', Topic.ignored.count, ignored_topics_path %>
+  <%= sidebar_link_to 'label-default', '全部', Topic.count, all_topics_path %>
 </ul>

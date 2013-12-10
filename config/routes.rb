@@ -4,10 +4,10 @@ Job::Application.routes.draw do
     put :ignored, :on => :member, :action => :put_ignored
     put :cared,   :on => :member, :action => :put_cared
 
-    get :inbox,   :on => :collection
+    get :all,     :on => :collection
     get :ignored, :on => :collection
     get :cared,   :on => :collection
   end
 
-  root 'topics#inbox'
+  root 'topics#index'
 end
