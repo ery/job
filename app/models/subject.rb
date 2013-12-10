@@ -3,6 +3,7 @@ class Subject < ActiveRecord::Base
     INBOX   = "inbox"
     IGNORED = "ignored"
     CARED   = "cared"
+    OTHER   = "other"
   end
 
   belongs_to :topic, :foreign_key => :url, :primary_key => :url

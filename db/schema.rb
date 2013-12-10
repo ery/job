@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131209170352) do
+ActiveRecord::Schema.define(version: 20131209170353) do
 
   create_table "subjects", force: true do |t|
     t.string   "title"
@@ -31,6 +31,9 @@ ActiveRecord::Schema.define(version: 20131209170352) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "analyzed_author"
+    t.string   "status",          default: "inbox"
+    t.string   "manual_salary"
+    t.string   "manual_memo"
   end
 
 end
