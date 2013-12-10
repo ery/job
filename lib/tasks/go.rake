@@ -5,6 +5,7 @@ task :go_3 => :environment do
     tag = get_status_tag(topic)
     TopicTag.create! :topic_id => topic.id, :tag_id => tag.id
   end
+  puts "."
 end
 
 def get_status_tag(topic)
