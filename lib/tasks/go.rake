@@ -1,10 +1,10 @@
 
 task :go_2 => :environment do
   Topic.all.each do |topic|
-    puts "Topic........................................"
     puts "title: #{topic.title}"
-    puts "status: #{topic.status}"
     next
+    puts "Topic........................................"
+    puts "status: #{topic.status}"
 
     puts "url: #{topic.url}"
     puts "file: #{topic.file}"
