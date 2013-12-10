@@ -6,7 +6,6 @@ class TopicsController < ApplicationController
   end
 
   def ignored
-    binding.pry
     @topics = Topic.ignored.order("manual_salary DESC")
   end
 
