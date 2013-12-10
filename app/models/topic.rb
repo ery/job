@@ -14,6 +14,15 @@ class Topic < ActiveRecord::Base
     "http://ruby-china.org/#{self.analyzed_author}"
   end
 
+  def self.status
+    list = []
+    list << ["收件箱", Status::INBOX]
+    list << ["关注", Status::CARED]
+    list << ["忽略", Status::IGNORED]
+    list << ["无", Status::NONE]
+    return list
+  end
+
   def self.sort_by_field(list, field, is_asc = true)
     list.sort do |x,y|
       x_value = x.send(field).to_s
