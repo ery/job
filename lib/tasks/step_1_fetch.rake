@@ -1,18 +1,18 @@
 require 'open-uri'
 
-desc "Step 1 fetch, found download create topic."
+desc "Step 1 fetch: find, download, create topics."
 task :step_1_fetch => :environment do
-  puts "Step 1 fetch topic, found download create topic."
-  $found_topics    = []
+  puts "Step 1 fetch: find, download, create topics."
+  $find_topics    = []
   $download_topics = []
-  $created_topics  = []
+  $create_topics  = []
 
   page_count = 40
   page_count.times.each do |index|
     page_number = index + 1
     page_url    = "http://ruby-china.org/topics/node25?page=#{page_number}"
     sleep 1
-    puts "Fetch topics from #{page_url}"
+    puts "Fetch from #{page_url}"
     fetch_topic page_url
     puts " "
   end
@@ -23,22 +23,26 @@ end
 def fetch_topic(page_url)
   doc = Nokogiri::HTML(open(page_url))
   doc.css('.topic_line').each do |line|
-    title        = line.css('.title a').first.content
-    url          = line.css('.title a').first[:href]
-    rubychina_id = line.css('.title a').first[:href].sub("topics/", "")
-
-    topic = {}
-    topic[:title] = title
-    topic[:url]   = "http://ruby-china.org#{url}"
-    topic[:file]  = "#{topic_folder}/#{rubychina_id}.html"
-
     print "."
-    $found_topics << topic
-
+    topic = find_topic(line)
     download_topic topic
-
     create_topic topic
   end
+end
+
+def find_topic(line)
+  title        = line.css('.title a').first.content
+  url          = line.css('.title a').first[:href]
+  rubychina_id = line.css('.title a').first[:href].sub("topics/", "")
+
+  topic = {}
+  topic[:title] = title
+  topic[:url]   = "http://ruby-china.org#{url}"
+  topic[:file]  = "#{topic_folder}/#{rubychina_id}.html"
+
+  $find_topics << topic
+
+  return topic
 end
 
 def download_topic(topic)
@@ -65,7 +69,7 @@ def create_topic(topic)
 
   Topic.create! topic
 
-  $created_topics << topic
+  $create_topics << topic
 end
 
 def topic_folder
@@ -77,7 +81,7 @@ def topic_folder
 end
 
 def puts_report
-  $created_topics.each do |topic|
+  $create_topics.each do |topic|
     puts "Create a topic..........................................."
     puts "Title: #{topic[:title]}"
     puts "URL:   #{topic[:url]}"
@@ -86,7 +90,7 @@ def puts_report
   end
 
   puts "Fetch topics:"
-  puts "Found #{$found_topics.count}."
+  puts "Find #{$find_topics.count}."
   puts "Download #{$download_topics.count}."
-  puts "Created #{$created_topics.count}."
+  puts "Create #{$create_topics.count}."
 end

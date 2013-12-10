@@ -1,7 +1,7 @@
 
-desc "Step 3 analyze topic"
-task :step_3_analyze_topic => :environment do
-  puts "Step 3 analyze topic"
+desc "Step 2 analyze"
+task :step_2_analyze => :environment do
+  puts "Step 2 analyze"
   Topic.all.each do |topic|
     print "."
     analyze_topic topic
