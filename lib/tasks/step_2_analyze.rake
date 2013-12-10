@@ -50,10 +50,6 @@ def analyze_company(topic)
   company = nil
   company ||= analyze_company_m1(topic)
   company ||= analyze_company_m2(topic)
-
-  puts "......................"
-  puts "company: #{company}"
-  puts "title: #{topic.title}"
   return company
 end
 
