@@ -4,14 +4,16 @@ module ApplicationHelper
     render 'layouts/action_header', :header => header
   end
 
-  def draw_subject_status(subject)
-    case subject.status
-    when Subject::Status::INBOX
-      content_tag :span, "Inbox", :class => "label label-primary"
-    when Subject::Status::IGNORED
-      content_tag :span, "Ignored", :class => "label label-default"
-    when Subject::Status::CARED
-      content_tag :span, "Cared", :class => "label label-danger"
+  def draw_topic_status(topic)
+    case topic.status
+    when Topic::Status::INBOX
+      content_tag :span, "收件箱", :class => "label label-primary"
+    when Topic::Status::IGNORED
+      content_tag :span, "已忽略", :class => "label label-default"
+    when Topic::Status::CARED
+      content_tag :span, "已关注", :class => "label label-danger"
+    when Topic::Status::NONE
+      content_tag :span, "无状态", :class => "label label-default"
     end
   end
 

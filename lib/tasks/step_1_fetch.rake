@@ -1,7 +1,7 @@
 require 'open-uri'
 
-desc "Step 1 fetch topic, found download create topic."
-task :step_1_fetch_topic => :environment do
+desc "Step 1 fetch, found download create topic."
+task :step_1_fetch => :environment do
   puts "Step 1 fetch topic, found download create topic."
   $found_topics    = []
   $download_topics = []
@@ -57,6 +57,12 @@ def create_topic(topic)
     return
   end
 
+  if topic[:title].include?("北京")
+    topic[:status] = Topic::Status::INBOX
+  else
+    topic[:status] = Topic::Status::NONE
+  end
+
   Topic.create! topic
 
   $created_topics << topic
@@ -84,4 +90,3 @@ def puts_report
   puts "Download #{$download_topics.count}."
   puts "Created #{$created_topics.count}."
 end
-

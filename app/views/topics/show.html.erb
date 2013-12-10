@@ -1,0 +1,15 @@
+<%= draw_action_header @topic.title %>
+
+<p id="notice"><%= notice %></p>
+
+<div class="well">
+  <div class="btn-group">
+    <button type="button" class="btn btn-default"><%= link_to '原招聘贴', @topic.url, :target => "_blank" %></button>
+    <button type="button" class="btn btn-default"><%= link_to '编辑', edit_topic_path(@topic) %></button>
+    <button type="button" class="btn btn-default"><%= link_to '收件箱', putinbox_topic_path(@topic), method: :put %></button>
+    <button type="button" class="btn btn-default"><%= link_to '忽略', ignore_topic_path(@topic), method: :put %></button>
+    <button type="button" class="btn btn-default"><%= link_to '关注', care_topic_path(@topic), method: :put %></button>
+  </div>
+</div>
+
+<%= render 'topic', :topic => @topic %>

@@ -1,7 +1,5 @@
 Job::Application.routes.draw do
-  get 'topics' => 'topics#index'
-
-  resources :subjects do
+  resources :topics do
     put :putinbox, :on => :member
     put :ignore,   :on => :member
     put :care,     :on => :member
@@ -10,5 +8,5 @@ Job::Application.routes.draw do
     get :cared,    :on => :collection
   end
 
-  root 'subjects#inbox'
+  root 'topics#inbox'
 end

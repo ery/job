@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20131209170353) do
 
-  create_table "subjects", force: true do |t|
+  create_table "topics", force: true do |t|
     t.string   "title"
     t.string   "url"
     t.string   "status",        default: "inbox"

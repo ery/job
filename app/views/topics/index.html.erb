@@ -1,20 +1,3 @@
-<%= draw_action_header "#{Topic.count} 个帖子" %>
+<%= draw_action_header "全部 #{@topics.count} 个帖子" %>
 
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>标题</th>
-      <th>URL</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @topics.each do |topic| %>
-    <tr>
-      <td><%= link_to topic.title, topic.url, :target => '_blank' %></td>
-      <td><%= link_to topic.url, topic.url, :target => '_blank' %></td>
-    </tr>
-    <% end %>
-  </tbody>
-</table>
-
+<%= render 'list', :topics => @topics %>
