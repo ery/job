@@ -17,6 +17,19 @@ class Topic < ActiveRecord::Base
     "http://ruby-china.org/#{self.analyzed_author}"
   end
 
+  def status_cn_name
+    case status
+    when Topic::Status::INBOX
+      return "收件箱"
+    when Topic::Status::IGNORED
+      return "已忽略"
+    when Topic::Status::CARED
+      return "已关注"
+    when Topic::Status::NONE
+      return "无状态"
+    end
+  end
+
   def add_tag(tag_name)
     tag = Tag.find_by_name(tag_name)
     unless tag

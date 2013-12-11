@@ -2,7 +2,7 @@
 task :go_3_add_topic_tag => :environment do
   Topic.all.each do |topic|
     print "."
-    topic.add_tag(topic.status)
+    topic.add_tag(topic.status_cn_name)
   end
   puts "."
 end
