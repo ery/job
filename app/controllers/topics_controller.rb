@@ -1,17 +1,17 @@
 class TopicsController < ApplicationController
-  before_action :set_topic, only: [:show, :edit, :update, :tag, :untag, :put_ignored, :put_cared, :put_inbox]
+  before_action :set_topic, only: [:show, :edit, :update, :add_tag, :remove_tag, :put_ignored, :put_cared, :put_inbox]
 
   def index
     @topics = Topic.inbox
   end
 
-  def tag
+  def add_tag
     tag_name = params[:tag]
     @topic.add_tag tag_name
     redirect_to @topic, notice: "添加标签成功 #{tag_name}"
   end
 
-  def untag
+  def remove_tag
     tag_name = params[:tag]
     @topic.remove_tag tag_name
     redirect_to @topic, notice: "移除标签成功 #{tag_name}"
