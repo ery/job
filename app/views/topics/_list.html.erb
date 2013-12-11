@@ -3,14 +3,11 @@
   <thead>
     <tr>
       <th style="min-width: 60px;"></th>
-      <th style="min-width: 80px;">状态</th>
       <th style="min-width: 80px;">作者</th>
       <th style="min-width: 80px;">公司</th>
       <th style="min-width: 80px;">发布时间</th>
-      <th style="min-width: 100px;">薪资(手动)</th>
+      <th style="min-width: 80px;">薪资(手动)</th>
       <th style="min-width: 80px;">标题</th>
-      <!-- <th style="min-width: 100px;">薪资(自动)</th> -->
-      <!-- <th style="min-width: 100px;">说明(手动)</th> -->
     </tr>
   </thead>
 
@@ -29,14 +26,11 @@
           </ul>
         </div>
       </td>
-      <td><%= link_to draw_topic_status(topic), topic %></td>
       <td><%= link_to topic.analyzed_author.to_s, topic %></td>
       <td><%= link_to topic.analyzed_company.to_s, topic %></td>
       <td><%= link_to topic.analyzed_release_at.strftime("%Y-%m-%d"), topic %></td>
       <td><%= link_to topic.manual_salary.to_s, topic %></td>
       <td><%= link_to topic.title.to_s, topic %></td>
-      <!-- <td><%= link_to topic.analyzed_salary.to_s, topic %></td> -->
-      <!-- <td><%= link_to topic.manual_memo.to_s, topic %></td> -->
     </tr>
     <% end %>
   </tbody>
