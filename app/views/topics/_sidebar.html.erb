@@ -1,6 +1,10 @@
 <ul class="nav nav-pills nav-stacked">
   <% Tag.all.each do |tag| %>
-    <%= sidebar_link_to "#{tag.order} #{tag.name}", tag_path(tag), tag.topics.count %>
+  <%= sidebar_link_to "#{tag.order} #{tag.name}", tag_path(tag), tag.topics.count %>
   <% end %>
+</ul>
+
+<ul class="nav nav-pills nav-stacked">
   <%= sidebar_link_to '标签管理', tags_path %>
+  <%= sidebar_link_to '无标签', untaged_topics_path %>
 </ul>

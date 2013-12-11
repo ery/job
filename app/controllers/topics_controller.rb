@@ -4,6 +4,15 @@ class TopicsController < ApplicationController
   def show
   end
 
+  def untaged
+    @topics = []
+    Topic.all.each do |topic|
+      if topic.topic_tags.count == 0
+        @topics << topic
+      end
+    end
+  end
+
   def edit
   end
 
