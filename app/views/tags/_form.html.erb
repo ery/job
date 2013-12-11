@@ -16,6 +16,11 @@
   <%= form.text_field :name, :class => "form-control" %>
 </div>
 
+<div class="form-group">
+  <%= form.label :order, '编号' %><br>
+  <%= form.number_field :order, :class => "form-control" %>
+</div>
+
 <div class="well">
   <div class="btn-toolbar">
     <%= form.submit('保存', :class => "btn btn-default") %>
