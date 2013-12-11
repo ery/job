@@ -8,19 +8,6 @@ module ApplicationHelper
     link_to title, url, {:class => "btn btn-default"}.merge(options)
   end
 
-  def draw_topic_status(topic)
-    case topic.status
-    when Topic::Status::INBOX
-      content_tag :span, "收件箱", :class => "label label-danger"
-    when Topic::Status::CARED
-      content_tag :span, "已关注", :class => "label label-warning"
-    when Topic::Status::IGNORED
-      content_tag :span, "已忽略", :class => "label label-info"
-    when Topic::Status::NONE
-      content_tag :span, "无状态", :class => "label label-default"
-    end
-  end
-
   def sidebar_link_to(title, path, count = 0)
     content_tag :li, current_page?(path) ? {:class => "active"} : {} do
       content_tag :a, :href => path do
