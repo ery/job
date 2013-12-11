@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 20131211085007) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "analyzed_author"
-    t.string   "status",              default: "inbox"
+    t.string   "status",              default: "other"
     t.string   "manual_salary"
     t.string   "manual_memo"
     t.datetime "analyzed_release_at"
