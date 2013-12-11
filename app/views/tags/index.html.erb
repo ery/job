@@ -11,6 +11,8 @@
     <tr>
       <th>ID</th>
       <th>名称</th>
+      <th>编号</th>
+      <th>帖子数量</th>
     </tr>
   </thead>
   <tbody>
@@ -18,6 +20,8 @@
     <tr>
       <td><%= link_to tag.id, tag %></td>
       <td><%= link_to tag.name, tag %></td>
+      <td><%= link_to tag.order, tag %></td>
+      <td><%= link_to tag.topics.count, tag %></td>
     </tr>
     <% end %>
   </tbody>
