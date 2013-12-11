@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131210192100) do
+ActiveRecord::Schema.define(version: 20131211081915) do
 
   create_table "tags", force: true do |t|
     t.string   "name"
@@ -19,10 +19,14 @@ ActiveRecord::Schema.define(version: 20131210192100) do
     t.datetime "updated_at"
   end
 
+  add_index "tags", ["name"], name: "index_tags_on_name", unique: true
+
   create_table "topic_tags", force: true do |t|
     t.integer "topic_id", null: false
     t.integer "tag_id",   null: false
   end
+
+  add_index "topic_tags", ["topic_id", "tag_id"], name: "index_topic_tags_on_topic_id_and_tag_id", unique: true
 
   create_table "topics", force: true do |t|
     t.string   "title"
@@ -38,5 +42,8 @@ ActiveRecord::Schema.define(version: 20131210192100) do
     t.datetime "analyzed_release_at"
     t.string   "analyzed_company"
   end
+
+  add_index "topics", ["file"], name: "index_topics_on_file", unique: true
+  add_index "topics", ["url"], name: "index_topics_on_url", unique: true
 
 end

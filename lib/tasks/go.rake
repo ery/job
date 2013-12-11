@@ -1,4 +1,31 @@
 
+task :go_6_remove_topic_tag => :environment do
+  TopicTag.delete_all()
+end
+
+task :go_5_check => :environment do
+  list = {}
+  TopicTag.all.each do |item|
+    if item.tag == nil
+      puts item.topic.title
+    end
+  end
+end
+
+task :go_4_check => :environment do
+  list = {}
+  TopicTag.all.each do |item|
+    key = "#{item.topic_id}_#{item.tag_id}"
+    if list[key]
+      puts key
+      puts "Tag #{item.tag.name}"
+      puts "Topic #{item.topic.title}"
+      return
+    end
+    list[key] = item
+  end
+end
+
 task :go_3_add_topic_tag => :environment do
   Topic.all.each do |topic|
     print "."
