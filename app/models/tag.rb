@@ -5,4 +5,7 @@ class Tag < ActiveRecord::Base
     :presence   => {:message => '名称不能为空'},
     :uniqueness => {:message => '名称不能重复'})
   default_scope -> { order('"order" ASC') }
+
+  INBOX = '收件箱'
+  OTHER = '其他'
 end

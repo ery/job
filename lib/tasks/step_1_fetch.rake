@@ -62,9 +62,9 @@ def create_topic(topic)
   end
 
   if topic[:title].include?("北京")
-    topic[:status] = Topic::Status::INBOX
+    topic.add_tag Tag::INBOX
   else
-    topic[:status] = Topic::Status::NONE
+    topic.add_tag Tag::OTHER
   end
 
   Topic.create! topic

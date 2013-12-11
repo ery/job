@@ -1,41 +1,11 @@
 class Topic < ActiveRecord::Base
-  module Status
-    INBOX   = "inbox"
-    IGNORED = "ignored"
-    CARED   = "cared"
-    NONE    = "none"
-  end
-
   has_many :topic_tags
   has_many :tags, :through => :topic_tags
 
   default_scope -> { order('manual_salary DESC, analyzed_release_at DESC') }
-  scope :inbox, -> { where(:status => Status::INBOX) }
 
   def analyzed_author_url
     "http://ruby-china.org/#{self.analyzed_author}"
-  end
-
-  def status_cn_name
-    case status
-    when Topic::Status::INBOX
-      return "收件箱"
-    when Topic::Status::IGNORED
-      return "已忽略"
-    when Topic::Status::CARED
-      return "已关注"
-    when Topic::Status::NONE
-      return "无状态"
-    end
-  end
-
-  def self.status
-    list = []
-    list << ["收件箱", Status::INBOX]
-    list << ["关注", Status::CARED]
-    list << ["忽略", Status::IGNORED]
-    list << ["无", Status::NONE]
-    return list
   end
 
   def is_taged(tag)
