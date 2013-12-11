@@ -1,20 +1,31 @@
 <%= draw_action_header "#{@tag.name} #{@tag.topics.count} 个帖子" %>
 
-<div class="well">
-  <div class="btn-group">
-    <%= draw_button_to '编辑', edit_tag_path(@tag) %>
-<!-- <%= draw_button_to '删除', tag_path(@tag), method: :delete, data: { confirm: "Are you sure?" } %> -->
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#topic" data-toggle="tab">帖子</a></li>
+  <li><a href="#tag"   data-toggle="tab">标签</a></li>
+</ul>
+
+<br>
+
+<div class="tab-content">
+  <div class="tab-pane active" id="topic">
+    <%= render './topics/list', :topics => @tag.topics %>
+  </div>
+
+  <div class="tab-pane" id="tag">
+    <div class="well">
+      <%= draw_button_to '编辑', edit_tag_path(@tag) %>
+      <!-- <%= draw_button_to '删除', tag_path(@tag), method: :delete, data: { confirm: "Are you sure?" } %> -->
+    </div>
+    <dl class="dl-horizontal">
+      <dt>名称:</dt>
+      <dd><%= @tag.name %></dd>
+    </dl>
+    <dl class="dl-horizontal">
+      <dt>编号:</dt>
+      <dd><%= @tag.order %></dd>
+    </dl>
   </div>
 </div>
 
-<dl class="dl-horizontal">
-  <dt>名称:</dt>
-  <dd><%= @tag.name %></dd>
-</dl>
 
-<dl class="dl-horizontal">
-  <dt>编号:</dt>
-  <dd><%= @tag.order %></dd>
-</dl>
-
-<%= render './topics/list', :topics => @tag.topics %>
