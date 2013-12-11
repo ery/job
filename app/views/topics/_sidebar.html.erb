@@ -1,13 +1,6 @@
 <ul class="nav nav-pills nav-stacked">
-  <%= sidebar_link_to '收件箱', topics_path,         Topic.inbox.count %>
-  <%= sidebar_link_to '已关注', cared_topics_path,   Topic.cared.count %>
-  <%= sidebar_link_to '已忽略', ignored_topics_path, Topic.ignored.count %>
-  <%= sidebar_link_to '全部的', all_topics_path,     Topic.count %>
-</ul>
-
-<ul class="nav nav-pills nav-stacked">
-  <%= sidebar_link_to '标签', tags_path %>
   <% Tag.all.each do |tag| %>
     <%= sidebar_link_to "#{tag.order} #{tag.name}", tag_path(tag), tag.topics.count %>
   <% end %>
+  <%= sidebar_link_to '标签管理', tags_path %>
 </ul>
