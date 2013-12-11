@@ -4,6 +4,11 @@ class TagsController < ApplicationController
     @tags = Tag.all
   end
 
+  def inbox
+    @tag = Tag.find_by_name!('收件箱')
+    render :show
+  end
+
   def show
     @tag = Tag.find(params[:id])
   end

@@ -6,5 +6,5 @@ Job::Application.routes.draw do
 
   resources :tags
 
-  root 'topics#index'
+  root 'tags#inbox'
 end
