@@ -61,13 +61,13 @@ def create_topic(topic)
     return
   end
 
-  if topic[:title].include?("北京")
-    topic.add_tag Tag::INBOX
-  else
-    topic.add_tag Tag::OTHER
-  end
+  topic_model = Topic.create! topic
 
-  Topic.create! topic
+  if topic_model.title.include?("北京")
+    topic_model.add_tag Tag::INBOX
+  else
+    topic_model.add_tag Tag::OTHER
+  end
 
   $create_topics << topic
 end

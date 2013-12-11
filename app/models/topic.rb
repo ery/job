@@ -8,6 +8,14 @@ class Topic < ActiveRecord::Base
     "http://ruby-china.org/#{self.analyzed_author}"
   end
 
+  def analyzed_release_at_text
+    if analyzed_release_at
+      return analyzed_release_at.strftime("%Y-%m-%d")
+    else
+      return "无"
+    end
+  end
+
   def is_taged(tag)
     self.topic_tags.exists?(tag_id: tag.id)
   end
