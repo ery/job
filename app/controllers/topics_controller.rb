@@ -8,6 +8,14 @@ class TopicsController < ApplicationController
     @topics = Topic.all
   end
 
+  def search
+    unless params[:key].blank?
+      @topics = Topic.where("title LIKE ?", "%#{params[:key]}%")
+    else
+      @topics = []
+    end
+  end
+
   def untaged
     @topics = []
     Topic.all.each do |topic|
