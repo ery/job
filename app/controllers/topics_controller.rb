@@ -17,36 +17,6 @@ class TopicsController < ApplicationController
     redirect_to @topic, notice: "移除标签成功 #{tag_name}"
   end
 
-  def ignored
-    @topics = Topic.ignored
-  end
-
-  def cared
-    @topics = Topic.cared
-  end
-
-  def all
-    @topics = Topic.all
-  end
-
-  def put_inbox
-    @topic.status = Topic::Status::INBOX
-    @topic.save!
-    redirect_to :back
-  end
-
-  def put_ignored
-    @topic.status = Topic::Status::IGNORED
-    @topic.save!
-    redirect_to :back
-  end
-
-  def put_cared
-    @topic.status = Topic::Status::CARED
-    @topic.save!
-    redirect_to :back
-  end
-
   def show
   end
 
