@@ -1,10 +1,11 @@
 <%= draw_action_header @topic.title %>
 
 <div class="well">
-
   <%= draw_button_to '原贴', @topic.url, target: "_blank" %>
   <%= draw_button_to '编辑', edit_topic_path(@topic) %>
+</div>
 
+<div class="well">
   <% Tag.all.each do |tag| %>
   <% if @topic.is_taged(tag) %>
   <%= draw_button_to tag.name, remove_tag_topic_path(@topic, tag: tag.name), method: :put, class: "btn btn-danger" %>
@@ -12,6 +13,7 @@
   <%= draw_button_to tag.name, add_tag_topic_path(@topic, tag: tag.name), method: :put, class: "btn btn-default" %>
   <% end %>
   <% end %>
+
   <div class="btn-group">
   </div>
 </div>

@@ -2,7 +2,8 @@ class Topic < ActiveRecord::Base
   has_many :topic_tags
   has_many :tags, :through => :topic_tags
 
-  default_scope -> { order('manual_salary DESC, analyzed_release_at DESC') }
+  # default_scope -> { order('manual_salary DESC, analyzed_release_at DESC') }
+  default_scope -> { order('analyzed_salary DESC') }
 
   def analyzed_author_url
     "http://ruby-china.org/#{self.analyzed_author}"

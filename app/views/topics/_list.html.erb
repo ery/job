@@ -7,6 +7,7 @@
       <th style="min-width: 80px;">公司</th>
       <th style="min-width: 80px;">发布时间</th>
       <th style="min-width: 80px;">薪资(手动)</th>
+      <th style="min-width: 180px;">薪资(自动)</th>
       <th style="min-width: 80px;">标题</th>
     </tr>
   </thead>
@@ -30,6 +31,7 @@
       <td><%= link_to topic.analyzed_company.to_s, topic %></td>
       <td><%= link_to topic.analyzed_release_at_text, topic %></td>
       <td><%= link_to topic.manual_salary.to_s, topic %></td>
+      <td><%= link_to topic.analyzed_salary.to_s, topic %></td>
       <td><%= link_to topic.title.to_s, topic %></td>
     </tr>
     <% end %>
