@@ -17,6 +17,22 @@ class Topic < ActiveRecord::Base
     "http://ruby-china.org/#{self.analyzed_author}"
   end
 
+  def add_tag(tag_name)
+    tag = Tag.find_by_name(tag_name)
+    unless tag
+      tag = Tag.create!(name: tag_name)
+    end
+
+    topic = self
+    topic_tag = {topic_id: topic.id, tag_id: tag.id}
+
+    if TopicTag.exists?(topic_tag)
+      return
+    end
+
+    TopicTag.create!(topic_tag)
+  end
+
   def self.status
     list = []
     list << ["收件箱", Status::INBOX]
