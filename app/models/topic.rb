@@ -30,6 +30,10 @@ class Topic < ActiveRecord::Base
     end
   end
 
+  def is_taged(tag)
+    self.topic_tags.exists?(tag_id: tag.id)
+  end
+
   def add_tag(tag_name)
     tag = Tag.find_by_name(tag_name)
     unless tag
@@ -44,6 +48,20 @@ class Topic < ActiveRecord::Base
     end
 
     TopicTag.create!(topic_tag)
+  end
+
+  def remove_tag(tag_name)
+    tag = Tag.find_by_name(tag_name)
+    unless tag
+      return
+    end
+
+    topic_tag = self.topic_tags.find_by_tag_id(tag.id)
+    unless topic_tag
+      return
+    end
+
+    topic_tag.destroy!
   end
 
   def self.status

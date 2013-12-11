@@ -1,6 +1,7 @@
 Job::Application.routes.draw do
   resources :topics do
-    put :tag,     :on => :member, :action => :tag
+    put :tag,     :on => :member
+    put :untag,   :on => :member
 
     put :inbox,   :on => :member, :action => :put_inbox
     put :ignored, :on => :member, :action => :put_ignored

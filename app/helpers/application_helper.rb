@@ -5,9 +5,7 @@ module ApplicationHelper
   end
 
   def draw_button_to(title, url, options = {})
-    content_tag :button, :class => "btn btn-default" do
-      link_to title, url, options
-    end
+    link_to title, url, {:class => "btn btn-default"}.merge(options)
   end
 
   def draw_topic_status(topic)
