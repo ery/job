@@ -52,4 +52,11 @@ class Topic < ActiveRecord::Base
     topic_tag.destroy!
   end
 
+  def tag_name
+    list = self.tags.collect do |t|
+      t.name
+    end
+    list.join(' ')
+  end
+
 end
