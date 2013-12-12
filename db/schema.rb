@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131211085007) do
+ActiveRecord::Schema.define(version: 20131212174423) do
 
   create_table "tags", force: true do |t|
     t.string   "name"
@@ -37,11 +37,12 @@ ActiveRecord::Schema.define(version: 20131211085007) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "analyzed_author"
-    t.string   "status",              default: "other"
+    t.string   "status",              default: "inbox"
     t.string   "manual_salary"
     t.string   "manual_memo"
     t.datetime "analyzed_release_at"
     t.string   "analyzed_company"
+    t.string   "manual_company"
   end
 
   add_index "topics", ["file"], name: "index_topics_on_file", unique: true
