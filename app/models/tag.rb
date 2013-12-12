@@ -8,4 +8,13 @@ class Tag < ActiveRecord::Base
 
   INBOX = '收件箱'
   OTHER = '其他'
+
+  def self.get_inbox
+    name = INBOX
+    tag = Tag.find_by_name(name)
+    unless tag
+      tag = Tag.create!(name: name, order: 1)
+    end
+    return tag
+  end
 end

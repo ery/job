@@ -5,7 +5,7 @@ class TagsController < ApplicationController
   end
 
   def inbox
-    @tag = Tag.find_by_name!('收件箱')
+    @tag = Tag.get_inbox
     render :show
   end
 

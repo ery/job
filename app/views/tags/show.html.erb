@@ -14,7 +14,7 @@
   <div class="tab-pane" id="tag">
     <div class="well">
       <%= draw_button_to '编辑', edit_tag_path(@tag) %>
-      <% draw_button_to '删除', tag_path(@tag), method: :delete, data: {confirm: "你确定要删除吗"} %>
+      <%= draw_button_to '删除', tag_path(@tag), method: :delete, data: {confirm: "你确定要删除吗"} %>
     </div>
     <dl class="dl-horizontal">
       <dt>名称:</dt>
