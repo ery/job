@@ -11,6 +11,7 @@
   <div class="tab-pane active" id="topic">
     <%= render './topics/list', :topics => @tag.topics %>
   </div>
+
   <div class="tab-pane" id="tag">
     <div class="well">
       <%= draw_button_to '编辑', edit_tag_path(@tag) %>

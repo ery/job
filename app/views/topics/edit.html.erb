@@ -16,12 +16,17 @@
 <% end %>
 
 <div class="form-group">
-  <%= form.label :monthly_salary, '薪资(手动)' %><br>
+  <%= form.label :manual_salary, '薪资' %><br>
   <%= form.text_field :manual_salary, :class => "form-control" %>
 </div>
 
 <div class="form-group">
-  <%= form.label :manual_memo, '说明(手动)' %><br>
+  <%= form.label :manual_company, '公司' %><br>
+  <%= form.text_field :manual_company, :class => "form-control" %>
+</div>
+
+<div class="form-group">
+  <%= form.label :manual_memo, '说明' %><br>
   <%= form.text_area :manual_memo, :class => "form-control" %>
 </div>
 

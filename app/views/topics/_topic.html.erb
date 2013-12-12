@@ -8,7 +8,6 @@
   <dt>发布时间:</dt>
   <dd><%= topic.analyzed_release_at_text %></dd>
 </dl>
-<td>
 
 <dl class="dl-horizontal">
   <dt>作者:</dt>
@@ -18,6 +17,16 @@
 <dl class="dl-horizontal">
   <dt>网址:</dt>
   <dd><%= link_to topic.url, topic.url, :target => '_blank' %></dd>
+</dl>
+
+<dl class="dl-horizontal">
+  <dt>公司(手动):</dt>
+  <dd><%= topic.manual_company %></dd>
+</dl>
+
+<dl class="dl-horizontal">
+  <dt>公司(自动):</dt>
+  <dd><%= topic.analyzed_company %></dd>
 </dl>
 
 <dl class="dl-horizontal">
@@ -31,6 +40,6 @@
 </dl>
 
 <dl class="dl-horizontal">
-  <dt>手动 说明:</dt>
+  <dt>说明(手动):</dt>
   <dd><%= topic.manual_memo %></dd>
 </dl>

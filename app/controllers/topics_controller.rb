@@ -55,7 +55,7 @@ class TopicsController < ApplicationController
   end
 
   def topic_params
-    params.require(:topic).permit(:manual_salary, :manual_memo)
+    params.require(:topic).permit(:manual_salary, :manual_memo, :manual_company)
   end
 
 end
