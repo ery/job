@@ -46,15 +46,10 @@ def analyze_release_at(doc)
 end
 
 def analyze_company(topic, description)
-
   company = nil
   company ||= analyze_company_1(topic.title)
   company ||= analyze_company_2(description)
   company ||= analyze_company_3(topic.title)
-
-  if topic.url == "http://ruby-china.org/topics/14268"
-    binding.pry
-  end
 
   return company
 end
