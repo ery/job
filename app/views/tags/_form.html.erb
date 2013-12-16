@@ -1,15 +1,6 @@
 <%= form_for(tag, :html => {:role => "form"}) do |form| %>
 
-<% if tag.errors.any? %>
-<div id="error_explanation">
-  <h2><%= pluralize(tag.errors.count, "error") %> prohibited this tag from being saved:</h2>
-  <ul>
-    <% tag.errors.full_messages.each do |msg| %>
-    <li><%= msg %></li>
-    <% end %>
-  </ul>
-</div>
-<% end %>
+<%= render './layouts/form_error', :object => tag %>
 
 <div class="form-group">
   <%= form.label :name, '名称' %><br>
