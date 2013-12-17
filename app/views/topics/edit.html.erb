@@ -4,7 +4,7 @@
 
 <%= form_for(@topic, :html => {:role => "form"}) do |form| %>
 
-<%= render 'form_error', :object => @topic %>
+<%= render './layouts/form_error', :object => @topic %>
 
 <div class="form-group">
   <%= form.label :manual_salary, '薪资' %><br>

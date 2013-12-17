@@ -17,4 +17,15 @@ class Tag < ActiveRecord::Base
     end
     return tag
   end
+
+  def unsend_topics
+    list = []
+    self.topics.each do |topic|
+      unless topic.tag_name.include? '已发送简历'
+        list << topic
+      end
+    end
+    return list
+  end
+
 end
