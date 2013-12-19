@@ -21,7 +21,7 @@ class Tag < ActiveRecord::Base
   def unsend_topics
     list = []
     self.topics.each do |topic|
-      unless topic.tag_name.include? '已发送简历'
+      unless topic.tag_name.include? '已经投简历'
         list << topic
       end
     end
