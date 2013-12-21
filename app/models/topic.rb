@@ -6,6 +6,36 @@ class Topic < ActiveRecord::Base
   #default_scope -> { order('analyzed_salary DESC') }
   default_scope -> { order('analyzed_release_at DESC') }
 
+  def self.search(key)
+    if key.blank?
+      return []
+    end
+
+    #WHERE column LIKE 'Text%' OR column LIKE 'Hello%' OR column LIKE 'That%'
+    #Topic.where("title LIKE ? OR", "%#{key}%")
+    condition = ""
+
+    columns = []
+    columns << "title"
+    columns << "analyzed_salary"
+    columns << "analyzed_author"
+    columns << "manual_salary"
+    columns << "manual_memo"
+    columns << "analyzed_company"
+    columns << "manual_company"
+    columns.each do |column|
+      condition += " OR " unless condition.blank?
+      condition += "#{column} LIKE ?"
+    end
+
+    params = []
+    columns.count.times.each do
+      params << "%#{key}%"
+    end
+
+    return self.where(condition, *params)
+  end
+
   def analyzed_author_url
     "http://ruby-china.org/#{self.analyzed_author}"
   end
