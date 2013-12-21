@@ -14,22 +14,12 @@ class Topic < ActiveRecord::Base
     #WHERE column LIKE 'Text%' OR column LIKE 'Hello%' OR column LIKE 'That%'
     #Topic.where("title LIKE ? OR", "%#{key}%")
     condition = ""
+    params = []
 
-    columns = []
-    columns << "title"
-    columns << "analyzed_salary"
-    columns << "analyzed_author"
-    columns << "manual_salary"
-    columns << "manual_memo"
-    columns << "analyzed_company"
-    columns << "manual_company"
+    columns = %w(title analyzed_salary analyzed_author analyzed_company manual_salary manual_memo manual_company)
     columns.each do |column|
       condition += " OR " unless condition.blank?
       condition += "#{column} LIKE ?"
-    end
-
-    params = []
-    columns.count.times.each do
       params << "%#{key}%"
     end
 
