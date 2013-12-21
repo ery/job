@@ -11,8 +11,6 @@ class Topic < ActiveRecord::Base
       return []
     end
 
-    #WHERE column LIKE 'Text%' OR column LIKE 'Hello%' OR column LIKE 'That%'
-    #Topic.where("title LIKE ? OR", "%#{key}%")
     condition = ""
     params = []
 
