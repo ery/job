@@ -1,7 +1,14 @@
 
+<%= form_tag('/topics/merge', :class => 'navbar-form') do %>
+
+<div class="well">
+  <button type="submit" class="btn btn-default">合并</button>
+</div>
+
 <table class="table table-striped">
   <thead>
     <tr>
+      <th style="min-width: 40px;"></th>
       <th style="min-width: 40px;"></th>
       <th style="min-width: 80px;">公司</th>
       <th style="min-width: 80px;">发布时间</th>
@@ -26,6 +33,7 @@
           </ul>
         </div>
       </td>
+      <td><input name="ids[]" value="<%= topic.id %>" type="checkbox"></td>
       <td><%= link_to topic.manual_company.to_s, topic %></td>
       <td><%= link_to topic.analyzed_release_at_text, topic %></td>
       <td><%= link_to topic.analyzed_author.to_s, topic %></td>
@@ -35,3 +43,5 @@
     <% end %>
   </tbody>
 </table>
+
+<% end %>

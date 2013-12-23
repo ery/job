@@ -4,6 +4,7 @@ Job::Application.routes.draw do
     put :remove_tag, :on => :member
     get :untaged,    :on => :collection
     get :search,     :on => :collection
+    post :merge,     :on => :collection
   end
 
   resources :tags

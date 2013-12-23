@@ -44,6 +44,13 @@ class TopicsController < ApplicationController
     redirect_to @topic, notice: "移除标签成功 #{tag_name}"
   end
 
+  def merge
+    ids = params[:ids]
+    topic = Topic.find(ids.first)
+    redirect_to topic, notice: '合并成功.'
+    binding.pry
+  end
+
   private
 
   def set_topic
