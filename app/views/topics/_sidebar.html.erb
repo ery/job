@@ -1,7 +1,7 @@
 <ul class="nav nav-pills nav-stacked">
   <%= sidebar_link_to '查找', search_topics_path %>
   <% Tag.all.each do |tag| %>
-  <%= sidebar_link_to tag.name, tag_path(tag), tag.topics.count %>
+  <%= sidebar_link_to tag.name, tag_path(tag), tag.topics.master.count %>
   <% end %>
 </ul>
 
