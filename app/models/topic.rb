@@ -8,6 +8,8 @@ class Topic < ActiveRecord::Base
   #default_scope -> { order('analyzed_salary DESC') }
   default_scope -> { order('analyzed_release_at DESC') }
 
+  scope :master, -> { where('parent_id is null') }
+
   def self.merge(ids)
     topic_list = self.where(id: ids).order('analyzed_release_at DESC')
     if topic_list.count < 2

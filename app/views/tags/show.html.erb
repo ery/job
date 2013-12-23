@@ -10,7 +10,7 @@
 
 <div class="tab-content">
   <div class="tab-pane active" id="topic">
-    <%= render './topics/list', :topics => @tag.topics %>
+    <%= render './topics/list', :topics => @tag.topics.master %>
   </div>
 
   <div class="tab-pane" id="tag">
