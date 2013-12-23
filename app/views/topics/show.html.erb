@@ -1,4 +1,8 @@
+<% if @topic.is_child %>
+<%= draw_action_header "重复帖子 " + @topic.title %>
+<% else %>
 <%= draw_action_header @topic.title %>
+<% end %>
 
 <div class="well">
   <%= draw_button_to '原贴', @topic.url, target: "_blank" %>

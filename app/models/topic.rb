@@ -1,10 +1,34 @@
 class Topic < ActiveRecord::Base
   has_many :topic_tags
   has_many :tags, :through => :topic_tags
+  belongs_to :parent, :class_name => 'Topic'
+  has_many :children, :class_name => 'Topic', :foreign_key => :parent_id
 
   # default_scope -> { order('manual_salary DESC, analyzed_release_at DESC') }
   #default_scope -> { order('analyzed_salary DESC') }
   default_scope -> { order('analyzed_release_at DESC') }
+
+  def self.merge(ids)
+    topic_list = self.where(id: ids).order('analyzed_release_at DESC')
+    if topic_list.count < 2
+      return topic_list.first
+    end
+
+    parent = topic_list.first
+    topic_list.each do |topic|
+      if topic == parent
+        topic.parent = nil
+      else
+        topic.parent = parent
+      end
+      topic.save!
+    end
+    return parent
+  end
+
+  def is_child
+    self.parent != nil
+  end
 
   def self.search(key)
     if key.blank?

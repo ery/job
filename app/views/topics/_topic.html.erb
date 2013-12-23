@@ -1,4 +1,11 @@
 
+<% if topic.parent %>
+<dl class="dl-horizontal">
+  <dt>Parent:</dt>
+  <dd><%= link_to topic.parent.title, topic.parent, :target => '_blank' %></dd>
+</dl>
+<% end %>
+
 <dl class="dl-horizontal">
   <dt>标题:</dt>
   <dd><%= topic.title %></dd>
@@ -45,3 +52,7 @@
   <dt>薪资(自动):</dt>
   <dd><%= topic.analyzed_salary %></dd>
 </dl>
+
+<% if topic.children.count > 0%>
+<%= render 'list', :topics => topic.children %>
+<% end %>

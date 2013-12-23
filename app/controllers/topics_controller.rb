@@ -46,9 +46,8 @@ class TopicsController < ApplicationController
 
   def merge
     ids = params[:ids]
-    topic = Topic.find(ids.first)
+    topic = Topic.merge(ids)
     redirect_to topic, notice: '合并成功.'
-    binding.pry
   end
 
   private
