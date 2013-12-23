@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131212174423) do
+ActiveRecord::Schema.define(version: 20131223132312) do
 
   create_table "tags", force: true do |t|
     t.string   "name"
@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(version: 20131212174423) do
     t.datetime "analyzed_release_at"
     t.string   "analyzed_company"
     t.string   "manual_company"
+    t.integer  "parent_id"
   end
 
   add_index "topics", ["file"], name: "index_topics_on_file", unique: true
