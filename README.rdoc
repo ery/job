@@ -1,8 +1,0 @@
-
-== First Time
-
-<tt> rake db:migrate </tt>.
-<tt> rake step_1_fetch </tt>.
-<tt> rake step_2_analyze </tt>.
-
-
